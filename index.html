@@ -225,7 +225,7 @@ function setSort(newKey) {
 
 /* ====== LOAD CSV (auto) ====== */
 function fetchCSV() {
-  fetch('all_latest.csv', { cache: 'no-store' })
+  fetch('data/latest/all_latest.csv', { cache: 'no-store' })
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.text(); })
     .then(text => {
       const parsed = Papa.parse(text, { header: true, skipEmptyLines: true });
