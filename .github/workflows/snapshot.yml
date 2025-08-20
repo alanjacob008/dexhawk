@@ -1,12 +1,14 @@
-concurrency:
-  group: daily-snapshot
-  cancel-in-progress: true
-
 name: daily-snapshot
+
 on:
   workflow_dispatch: {}
   schedule:
     - cron: "2 0 * * *"   # 00:02 UTC daily
+
+# serialize with hourly job to avoid push races
+concurrency:
+  group: data-writes
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -30,9 +32,9 @@ jobs:
 
       - name: Compute UTC date
         id: utc
-        run: echo "today=$(python - <<'PY'\nimport datetime as dt;print(dt.datetime.utcnow().date().isoformat())\nPY\n)" >> $GITHUB_OUTPUT
+        run: echo "today=$(date -u +%F)" >> "$GITHUB_OUTPUT"
 
-      - name: Run orchestrator
+      - name: Run orchestrator (daily snapshot)
         run: python -m src.orchestrate --date "${{ steps.utc.outputs.today }}"
 
       - name: Commit data changes

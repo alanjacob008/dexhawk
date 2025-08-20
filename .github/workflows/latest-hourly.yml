@@ -1,10 +1,11 @@
 name: latest-hourly
+
 on:
   workflow_dispatch: {}
   schedule:
     - cron: "5 * * * *"   # every hour at :05 UTC
 
-# serialize all data writes (hourly & daily) to avoid push races
+# serialize with daily job to avoid push races
 concurrency:
   group: data-writes
   cancel-in-progress: true
@@ -31,9 +32,9 @@ jobs:
 
       - name: Compute UTC date
         id: utc
-        run: echo "today=$(python - <<'PY'\nimport datetime as dt;print(dt.datetime.utcnow().date().isoformat())\nPY\n)" >> $GITHUB_OUTPUT
+        run: echo "today=$(date -u +%F)" >> "$GITHUB_OUTPUT"
 
-      # run the same orchestrator but publish ONLY to data/latest (no daily/history)
+      # NOTE: requires orchestrate to support --mode latest (latest-only publish)
       - name: Run orchestrator (latest-only)
         run: python -m src.orchestrate --date "${{ steps.utc.outputs.today }}" --mode latest
 
