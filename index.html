@@ -6,49 +6,32 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 <style>
-  /* ===== Base ===== */
   :root { --bg:#0f172a; --panel:#0e1729; --border:#1f2937; --text:#e5e7eb; --muted:#94a3b8; }
   body { margin:0; background:#0b1020; color:var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
   .container { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
   h1 { font-size: 20px; margin: 0 0 10px 0; }
   .legend { display:flex; gap:10px; align-items:center; font-size:12px; color:var(--muted); margin-bottom:10px; }
   .chip { padding:4px 8px; border-radius: 999px; border:1px solid var(--border); background:#121a30; }
-  .chip.drift { background:#f3e8ff22; }
-  .chip.dydx { background:#dbeafe22; }
-  .chip.hyper { background:#bbf7d022; }
+  .chip.drift { background:#f3e8ff22; } .chip.dydx { background:#dbeafe22; } .chip.hyper { background:#bbf7d022; }
 
-  /* ===== Controls ===== */
   .toolbar { display:flex; flex-wrap:wrap; gap:12px; align-items:center; background:var(--panel); border:1px solid var(--border); padding:12px; border-radius:12px; }
   .toolbar label { font-size:12px; color: var(--muted); }
-  .toolbar input[type="text"], .toolbar select {
-    padding:8px 10px; border-radius:10px; border:1px solid var(--border); background:#0b1325; color:var(--text);
-  }
+  .toolbar input[type="text"], .toolbar select { padding:8px 10px; border-radius:10px; border:1px solid var(--border); background:#0b1325; color:var(--text); }
 
-  /* ===== Table ===== */
   .table-wrap { margin-top:16px; background:var(--panel); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
   table { width:100%; border-collapse:separate; border-spacing:0; }
-  thead th {
-    position: sticky; top: 0;
-    background:#0b1325; color:#cbd5e1; font-weight:600; font-size:12px;
-    text-align:left; padding:10px; border-bottom:1px solid var(--border); user-select:none;
-  }
+  thead th { position: sticky; top: 0; background:#0b1325; color:#cbd5e1; font-weight:600; font-size:12px;
+             text-align:left; padding:10px; border-bottom:1px solid var(--border); user-select:none; }
   thead th.sortable { cursor:pointer; }
   thead th.sortable .arrow { opacity:0.5; margin-left:6px; font-size:11px; }
   thead th.sortable.active .arrow { opacity:1; }
   tbody td { padding:10px; font-size:13px; border-bottom:1px solid #111827; }
-  .group-row td {
-    background:#0b1020; color:#93c5fd; font-weight:700; font-size:12px;
-    text-transform: uppercase; letter-spacing:0.06em;
-    border-top:1px solid var(--border);
-  }
+  .group-row td { background:#0b1020; color:#93c5fd; font-weight:700; font-size:12px; text-transform: uppercase;
+                  letter-spacing:0.06em; border-top:1px solid var(--border); }
 
-  /* ===== Exchange colors ===== */
-  .ex-drift td { background:#f3e8ff22; }
-  .ex-drift:hover td { background:#f3e8ff33; }
-  .ex-dydx td { background:#dbeafe22; }
-  .ex-dydx:hover td { background:#dbeafe33; }
-  .ex-hyperliquid td { background:#bbf7d022; }
-  .ex-hyperliquid:hover td { background:#bbf7d033; }
+  .ex-drift td { background:#8d23ff22; } .ex-drift:hover td { background:#f3e8ff33; }
+  .ex-dydx td { background:#2382ff22; } .ex-dydx:hover td { background:#dbeafe33; }
+  .ex-hyperliquid td { background:#25ff7122; } .ex-hyperliquid:hover td { background:#bbf7d033; }
 
   .badge { font-size:11px; padding:2px 6px; border-radius:6px; border:1px solid #233047; color:#a5b4fc; background:#0b1325; }
   .empty { color:#64748b; font-style:italic; }
@@ -64,12 +47,8 @@
       <span class="chip hyper">hyperliquid</span>
     </div>
     <div class="toolbar">
-      <label>
-        Symbol filter:
-        <input id="symFilter" type="text" placeholder="e.g. BTC-USD" />
-      </label>
-      <label>
-        Type:
+      <label>Symbol filter: <input id="symFilter" type="text" placeholder="e.g. BTC-USD" /></label>
+      <label>Type:
         <select id="typeFilter">
           <option value="">All</option>
           <option value="CROSS">CROSS</option>
@@ -100,46 +79,25 @@
   </div>
 
 <script>
-/* ========= SECTION A: state ========= */
+/* ====== STATE ====== */
 const tbody   = document.getElementById('body');
 const summary = document.getElementById('summary');
 const symFilterEl  = document.getElementById('symFilter');
 const typeFilterEl = document.getElementById('typeFilter');
 const headerCells  = Array.from(document.querySelectorAll('thead th.sortable'));
 
-let rowsRaw = [];     // parsed CSV rows (projected)
+let rowsRaw = [];      // parsed CSV rows
 let rowsFiltered = []; // after filters
+let sortKey = null;    // 'leverage_max' | 'volume_24h_usd' | 'open_interest_usd'
+let sortDir = 'desc';  // 'asc' | 'desc'
 
-// Sorting state — default none
-let sortKey = null;       // 'leverage_max' | 'volume_24h_usd' | 'open_interest_usd'
-let sortDir = 'desc';     // 'asc' | 'desc'
-
-/* ========= SECTION B: utils ========= */
-const num = (v) => {
-  if (v === null || v === undefined || v === '') return null;
-  const n = Number(v);
-  return Number.isFinite(n) ? n : null;
-};
-
-const fmt = (v, digits=2) => {
-  if (v === null || v === undefined || v === '') return '';
-  const n = Number(v);
-  if (!Number.isFinite(n)) return '';
-  return n.toLocaleString(undefined, { maximumFractionDigits: digits });
-};
-
-const exClass = (ex) => {
-  const s = String(ex || '').toLowerCase();
-  if (s.includes('drift')) return 'ex-drift';
-  if (s.includes('dydx')) return 'ex-dydx';
-  if (s.includes('hyper')) return 'ex-hyperliquid';
-  return '';
-};
+/* ====== UTILS ====== */
+const num = (v) => { if (v === null || v === undefined || v === '') return null; const n = Number(v); return Number.isFinite(n) ? n : null; };
+const fmt = (v, digits=2) => { const n = num(v); return n === null ? '' : n.toLocaleString(undefined, { maximumFractionDigits: digits }); };
+const exClass = (ex) => { const s = String(ex||'').toLowerCase(); if (s.includes('drift')) return 'ex-drift'; if (s.includes('dydx')) return 'ex-dydx'; if (s.includes('hyper')) return 'ex-hyperliquid'; return ''; };
 
 function ensureColumns(row) {
-  // Accept exact header names; be robust to case.
-  const m = {};
-  for (const k in row) m[k.toLowerCase()] = row[k];
+  const m = {}; for (const k in row) m[k.toLowerCase()] = row[k];
   return {
     exchange: m['exchange'] ?? '',
     market_type: (m['market_type'] ?? '').toUpperCase(),
@@ -151,7 +109,19 @@ function ensureColumns(row) {
   };
 }
 
-/* ========= SECTION C: render ========= */
+/* ====== GROUP-LEVEL SORT HELPERS ======
+   We rank each symbol group by the *max* value of the active sortKey.
+   This moves whole groups up/down when sorting. */
+function groupMaxValue(group, key) {
+  let top = null;
+  for (const r of group) {
+    const v = num(r[key]);
+    if (v !== null) top = (top === null ? v : Math.max(top, v));
+  }
+  return top; // can be null if all missing
+}
+
+/* ====== RENDER ====== */
 function renderTable(data) {
   if (!data || data.length === 0) {
     tbody.innerHTML = `<tr><td colspan="7" class="empty">No rows match the current filters.</td></tr>`;
@@ -159,29 +129,43 @@ function renderTable(data) {
     return;
   }
 
-  // Group by symbol_raw
+  // group by symbol
   const groups = {};
   for (const r of data) {
     const sym = (r.symbol_raw || '').toUpperCase();
-    if (!groups[sym]) groups[sym] = [];
-    groups[sym].push(r);
+    (groups[sym] ??= []).push(r);
   }
 
-  // Sort groups by symbol; inside each group, sort by current sortKey (if any), else by exchange
-  const symbols = Object.keys(groups).sort((a,b) => a.localeCompare(b));
+  // ORDER GROUPS:
+  // - if sortKey is set: order by group max of that metric (desc/asc)
+  // - else: alphabetical by symbol
+  let symbols = Object.keys(groups);
+  if (sortKey) {
+    const dir = (sortDir === 'asc') ? 1 : -1;
+    symbols.sort((a, b) => {
+      const av = groupMaxValue(groups[a], sortKey);
+      const bv = groupMaxValue(groups[b], sortKey);
+      if (av === null && bv === null) return a.localeCompare(b);
+      if (av === null) return 1;   // nulls last
+      if (bv === null) return -1;
+      return (av < bv ? -1 : av > bv ? 1 : 0) * dir;
+    });
+  } else {
+    symbols.sort((a,b) => a.localeCompare(b));
+  }
 
-  let html = '';
-  let total = 0;
-
+  // BUILD HTML
+  let html = ''; let total = 0;
   for (const sym of symbols) {
     let group = groups[sym];
 
+    // order rows in each group by sortKey (if any), else by exchange
     if (sortKey) {
-      const dir = sortDir === 'asc' ? 1 : -1;
+      const dir = (sortDir === 'asc') ? 1 : -1;
       group = group.slice().sort((a,b) => {
         const av = num(a[sortKey]); const bv = num(b[sortKey]);
-        if (av === null && bv === null) return 0;
-        if (av === null) return 1;    // nulls last
+        if (av === null && bv === null) return String(a.exchange).localeCompare(String(b.exchange));
+        if (av === null) return 1;
         if (bv === null) return -1;
         return (av < bv ? -1 : av > bv ? 1 : 0) * dir;
       });
@@ -191,16 +175,15 @@ function renderTable(data) {
 
     html += `<tr class="group-row"><td colspan="7">${sym}</td></tr>`;
     for (const r of group) {
-      const cls = exClass(r.exchange);
       html += `
-        <tr class="${cls}">
+        <tr class="${exClass(r.exchange)}">
           <td>${r.exchange ?? ''}</td>
           <td><span class="badge">${r.market_type ?? ''}</span></td>
           <td>${r.symbol_raw ?? ''}</td>
           <td>${r.leverage_max !== '' && r.leverage_max != null ? `${r.leverage_max}x` : ''}</td>
-          <td>${fmt(num(r.price_usd), 6)}</td>
-          <td>${fmt(num(r.volume_24h_usd), 2)}</td>
-          <td>${fmt(num(r.open_interest_usd), 2)}</td>
+          <td>${fmt(r.price_usd, 6)}</td>
+          <td>${fmt(r.volume_24h_usd, 2)}</td>
+          <td>${fmt(r.open_interest_usd, 2)}</td>
         </tr>`;
       total++;
     }
@@ -210,7 +193,7 @@ function renderTable(data) {
   summary.textContent = `Showing ${total} rows across ${symbols.length} symbols.`;
 }
 
-/* ========= SECTION D: filters & sorting ========= */
+/* ====== FILTERS & SORT ====== */
 function applyFilters() {
   const q = String(symFilterEl.value || '').trim().toUpperCase();
   const t = String(typeFilterEl.value || '').toUpperCase();
@@ -225,14 +208,12 @@ function applyFilters() {
 }
 
 function setSort(newKey) {
-  // toggle / set sort key
   if (sortKey === newKey) {
     sortDir = (sortDir === 'asc') ? 'desc' : 'asc';
   } else {
     sortKey = newKey;
     sortDir = 'desc';
   }
-  // header styles
   headerCells.forEach(th => {
     th.classList.toggle('active', th.dataset.key === sortKey);
     const arrow = th.querySelector('.arrow');
@@ -242,24 +223,21 @@ function setSort(newKey) {
   renderTable(rowsFiltered);
 }
 
-/* ========= SECTION E: load CSV (auto) ========= */
+/* ====== LOAD CSV (auto) ====== */
 function fetchCSV() {
   fetch('all_latest.csv', { cache: 'no-store' })
-    .then(r => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.text();
-    })
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.text(); })
     .then(text => {
       const parsed = Papa.parse(text, { header: true, skipEmptyLines: true });
       rowsRaw = (parsed.data || []).map(ensureColumns);
       applyFilters();
     })
     .catch(err => {
-      tbody.innerHTML = `<tr><td colspan="7" class="empty">Failed to load all_latest.csv (${String(err)}). Make sure it’s in the site root.</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="7" class="empty">Failed to load all_latest.csv (${String(err)}). Ensure it's in the repo root.</td></tr>`;
     });
 }
 
-/* ========= SECTION F: events ========= */
+/* ====== EVENTS ====== */
 symFilterEl.addEventListener('input', applyFilters);
 typeFilterEl.addEventListener('change', applyFilters);
 headerCells.forEach(th => th.addEventListener('click', () => setSort(th.dataset.key)));
