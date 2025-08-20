@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>DEX Market Viewer</title>
+<title>DexHawk — Last updated …</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<!-- libs -->
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
 <style>
-  :root { --bg:#0f172a; --panel:#0e1729; --border:#1f2937; --text:#e5e7eb; --muted:#94a3b8; }
-  body { margin:0; background:#0b1020; color:var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
-  .container { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
-  h1 { font-size: 20px; margin: 0 0 10px 0; }
-  .legend { display:flex; gap:10px; align-items:center; font-size:12px; color:var(--muted); margin-bottom:10px; }
-  .chip { padding:4px 8px; border-radius: 999px; border:1px solid var(--border); background:#121a30; }
-  .chip.drift { background:#f3e8ff22; } .chip.dydx { background:#dbeafe22; } .chip.hyper { background:#bbf7d022; }
+  :root { --bg:#0b1020; --panel:#0e1729; --border:#1f2937; --text:#e5e7eb; --muted:#94a3b8; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
+  .container { max-width: 1280px; margin: 24px auto; padding: 0 16px; }
+  h1 { font-size: 20px; margin: 0 0 10px 0; font-weight:700; }
+  .last-updated { color: var(--muted); font-size: 12px; margin: 2px 0 16px; }
+
+  /* chips */
+  .chips { display:flex; gap:8px; flex-wrap:wrap; margin: 0 0 10px; }
+  .chip { padding:6px 10px; border-radius:999px; border:1px solid var(--border); cursor:pointer; user-select:none; font-size:12px; }
+  .chip.on { box-shadow: inset 0 0 0 999px #ffffff10; }
+  .chip.drift { background:#8d23ff22; } .chip.dydx { background:#2382ff22; } .chip.hyper { background:#25ff7122; }
 
   .toolbar { display:flex; flex-wrap:wrap; gap:12px; align-items:center; background:var(--panel); border:1px solid var(--border); padding:12px; border-radius:12px; }
   .toolbar label { font-size:12px; color: var(--muted); }
-  .toolbar input[type="text"], .toolbar select { padding:8px 10px; border-radius:10px; border:1px solid var(--border); background:#0b1325; color:var(--text); }
+  .toolbar input[type="text"], .toolbar select, .toolbar input[type="number"] { padding:8px 10px; border-radius:10px; border:1px solid var(--border); background:#0b1325; color:var(--text); min-width: 90px; }
 
   .table-wrap { margin-top:16px; background:var(--panel); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
   table { width:100%; border-collapse:separate; border-spacing:0; }
@@ -25,9 +31,10 @@
   thead th.sortable { cursor:pointer; }
   thead th.sortable .arrow { opacity:0.5; margin-left:6px; font-size:11px; }
   thead th.sortable.active .arrow { opacity:1; }
-  tbody td { padding:10px; font-size:13px; border-bottom:1px solid #111827; }
+  tbody td { padding:10px; font-size:13px; border-bottom:1px solid #111827; vertical-align: top; }
   .group-row td { background:#0b1020; color:#93c5fd; font-weight:700; font-size:12px; text-transform: uppercase;
-                  letter-spacing:0.06em; border-top:1px solid var(--border); }
+                  letter-spacing:0.06em; border-top:1px solid var(--border); cursor:pointer; }
+  .group-row .sub { font-weight:400; color:#9ca3af; text-transform:none; letter-spacing:0; font-size: 11px; margin-left: 8px; }
 
   .ex-drift td { background:#8d23ff22; } .ex-drift:hover td { background:#f3e8ff33; }
   .ex-dydx td { background:#2382ff22; } .ex-dydx:hover td { background:#dbeafe33; }
@@ -36,18 +43,35 @@
   .badge { font-size:11px; padding:2px 6px; border-radius:6px; border:1px solid #233047; color:#a5b4fc; background:#0b1325; }
   .empty { color:#64748b; font-style:italic; }
   .footer { margin-top:10px; font-size:12px; color:#94a3b8; }
+
+  .drawer { background:#0b1325; border-top:1px dashed #1f2a44; padding:12px 10px 14px 10px; }
+  .charts { display:grid; gap:14px; grid-template-columns: 1fr; }
+  @media (min-width: 980px) { .charts { grid-template-columns: 1fr 1fr; } }
+  .chart-card { border:1px solid var(--border); border-radius:10px; padding:8px; background:#0d162c; }
+  .chart-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; font-size:12px; color:var(--muted); }
+  .toggles { display:flex; gap:8px; flex-wrap:wrap; }
+  .tog { display:flex; align-items:center; gap:6px; font-size:12px; }
+  .note { font-size:12px; color:#9ca3af; margin-top:6px; }
+  .changes { margin-top:10px; font-size:12px; color:#cbd5e1; }
+  .changes h4 { margin: 6px 0; font-size:12px; color:#9ca3af; }
+  .changes li { margin: 2px 0; }
 </style>
 </head>
 <body>
   <div class="container">
-    <h1>DEX Market Viewer</h1>
-    <div class="legend">
-      <span class="chip drift">drift</span>
-      <span class="chip dydx">dydx</span>
-      <span class="chip hyper">hyperliquid</span>
+    <h1 id="title">DexHawk</h1>
+    <div class="last-updated" id="lastUpdated">Loading last updated…</div>
+
+    <!-- exchange chips -->
+    <div class="chips" id="exchangeChips">
+      <span class="chip drift on" data-ex="drift">drift</span>
+      <span class="chip dydx on" data-ex="dydx">dydx</span>
+      <span class="chip hyper on" data-ex="hyperliquid">hyperliquid</span>
     </div>
+
+    <!-- toolbar -->
     <div class="toolbar">
-      <label>Symbol filter: <input id="symFilter" type="text" placeholder="e.g. BTC-USD" /></label>
+      <label>Symbol: <input id="symFilter" type="text" placeholder="e.g. BTC-USD" /></label>
       <label>Type:
         <select id="typeFilter">
           <option value="">All</option>
@@ -55,23 +79,42 @@
           <option value="ISOLATED">ISOLATED</option>
         </select>
       </label>
+      <label>Presence:
+        <select id="presenceFilter">
+          <option value="">All</option>
+          <option value="not_dydx">Not on dYdX</option>
+          <option value="not_drift">Not on Drift</option>
+          <option value="not_hyperliquid">Not on Hyperliquid</option>
+        </select>
+      </label>
+      <label>Baseline:
+        <select id="baselineSel">
+          <option value="dydx">dydx</option>
+          <option value="drift">drift</option>
+          <option value="hyperliquid">hyperliquid</option>
+        </select>
+      </label>
     </div>
 
+    <!-- table -->
     <div class="table-wrap">
       <table id="grid">
         <thead>
           <tr>
-            <th style="width:14%">Exchange</th>
-            <th style="width:12%">Type</th>
+            <th style="width:10%">Exchange</th>
+            <th style="width:10%">Type</th>
             <th style="width:18%">Symbol</th>
-            <th class="sortable" data-key="leverage_max" style="width:12%">Leverage <span class="arrow">↕</span></th>
-            <th style="width:14%">Price (USD)</th>
-            <th class="sortable" data-key="volume_24h_usd" style="width:15%">24h Vol (USD) <span class="arrow">↕</span></th>
-            <th class="sortable" data-key="open_interest_usd" style="width:15%">OI (USD) <span class="arrow">↕</span></th>
+            <th class="sortable" data-key="leverage_max" style="width:10%">Lev <span class="arrow">↕</span></th>
+            <th style="width:12%">Price</th>
+            <th class="sortable" data-key="volume_24h_usd" style="width:12%">24h Vol <span class="arrow">↕</span></th>
+            <th class="sortable" data-key="open_interest_usd" style="width:12%">OI <span class="arrow">↕</span></th>
+            <th class="sortable" data-key="vol_oi_ratio" style="width:8%">Vol/OI <span class="arrow">↕</span></th>
+            <th class="sortable" data-key="vol_vs_base_x" style="width:8%">Vol vs Base <span class="arrow">↕</span></th>
+            <th class="sortable" data-key="oi_vs_base_x" style="width:8%">OI vs Base <span class="arrow">↕</span></th>
           </tr>
         </thead>
         <tbody id="body">
-          <tr><td colspan="7" class="empty">Loading all_latest.csv…</td></tr>
+          <tr><td colspan="10" class="empty">Loading data/latest/all_latest.csv…</td></tr>
         </tbody>
       </table>
     </div>
@@ -79,74 +122,193 @@
   </div>
 
 <script>
-/* ====== STATE ====== */
+/* ===========================
+   SECTION: STATE & CONSTANTS
+   =========================== */
 const tbody   = document.getElementById('body');
 const summary = document.getElementById('summary');
 const symFilterEl  = document.getElementById('symFilter');
 const typeFilterEl = document.getElementById('typeFilter');
+const presenceEl   = document.getElementById('presenceFilter');
+const baselineSel  = document.getElementById('baselineSel');
+const chipsWrap    = document.getElementById('exchangeChips');
+const lastUpdatedEl = document.getElementById('lastUpdated');
+const titleEl = document.getElementById('title');
 const headerCells  = Array.from(document.querySelectorAll('thead th.sortable'));
 
-let rowsRaw = [];      // parsed CSV rows
-let rowsFiltered = []; // after filters
-let sortKey = null;    // 'leverage_max' | 'volume_24h_usd' | 'open_interest_usd'
+const COLORS = { drift:'#8d23ff', dydx:'#2382ff', hyperliquid:'#25ff71' };
+
+let rowsRaw = [];      // parsed CSV rows (normalized keys)
+let rowsFiltered = []; // after all filters
+let exchangeOn = { drift:true, dydx:true, hyperliquid:true };
+let sortKey = null;    // 'leverage_max' | 'volume_24h_usd' | 'open_interest_usd' | 'vol_oi_ratio' | 'vol_vs_base_x' | 'oi_vs_base_x'
 let sortDir = 'desc';  // 'asc' | 'desc'
+let drawers = new Map(); // symbol_raw -> drawer DOM (for toggle/state)
+let historyCache = new Map(); // symbol_raw -> { dates:[], byEx:{dydx:[], drift:[], hyperliquid:[]}, meta:{changes:[]}}
 
-/* ====== UTILS ====== */
+const LATEST_CSV_URL = 'data/latest/all_latest.csv';
+
+/* ===========================
+   SECTION: FORMATTERS
+   =========================== */
 const num = (v) => { if (v === null || v === undefined || v === '') return null; const n = Number(v); return Number.isFinite(n) ? n : null; };
-const fmt = (v, digits=2) => { const n = num(v); return n === null ? '' : n.toLocaleString(undefined, { maximumFractionDigits: digits }); };
-const exClass = (ex) => { const s = String(ex||'').toLowerCase(); if (s.includes('drift')) return 'ex-drift'; if (s.includes('dydx')) return 'ex-dydx'; if (s.includes('hyper')) return 'ex-hyperliquid'; return ''; };
 
+function usdShort(n) {
+  const x = num(n); if (x === null) return '';
+  const sign = x < 0 ? '-' : '';
+  const v = Math.abs(x);
+  if (v >= 1e9)  return `${sign}$${(v/1e9).toFixed(2)}B`;
+  if (v >= 1e6)  return `${sign}$${(v/1e6).toFixed(2)}M`;
+  if (v >= 1e3)  return `${sign}$${(v/1e3).toFixed(2)}K`;
+  return `${sign}$${v.toFixed(2)}`;
+}
+
+function priceUsd(p) {
+  const x = num(p); if (x === null) return '';
+  if (x < 1) return `$${x.toFixed(6)}`;
+  if (x < 100) return `$${x.toFixed(3)}`;
+  if (x < 10000) return `$${x.toFixed(2)}`;
+  return `$${x.toFixed(0)}`;
+}
+
+function ratioVolOI(row) {
+  const v = num(row.volume_24h_usd), oi = num(row.open_interest_usd);
+  if (v === null || oi === null || oi === 0) return null;
+  return v / oi;
+}
+
+function fmtRatio(val) {
+  if (val === null) return '—';
+  if (!isFinite(val)) return '—';
+  return val.toFixed(2);
+}
+
+function fmtX(val, isSelected=false) {
+  if (isSelected) return 'selected';
+  if (val === null || !isFinite(val) || val <= 0) return '—';
+  return `${val.toFixed(2)}×`;
+}
+
+function exClass(ex) {
+  const s = String(ex||'').toLowerCase();
+  if (s.includes('drift')) return 'ex-drift';
+  if (s.includes('dydx')) return 'ex-dydx';
+  if (s.includes('hyper')) return 'ex-hyperliquid';
+  return '';
+}
+
+/* ===========================
+   SECTION: NORMALIZATION
+   =========================== */
 function ensureColumns(row) {
   const m = {}; for (const k in row) m[k.toLowerCase()] = row[k];
-  return {
-    exchange: m['exchange'] ?? '',
+  const r = {
+    exchange: (m['exchange'] ?? '').toLowerCase(),
     market_type: (m['market_type'] ?? '').toUpperCase(),
     symbol_raw: (m['symbol_raw'] ?? '').toUpperCase(),
     leverage_max: m['leverage_max'] ?? '',
     price_usd: m['price_usd'] ?? '',
     volume_24h_usd: m['volume_24h_usd'] ?? '',
     open_interest_usd: m['open_interest_usd'] ?? '',
+    daily_snapshot: m['daily_snapshot'] ?? '',
   };
+  r.leverage_max_num = num(r.leverage_max);
+  r.volume_num = num(r.volume_24h_usd);
+  r.oi_num = num(r.open_interest_usd);
+  r.vol_oi_ratio = ratioVolOI(r);
+  return r;
 }
 
-/* ====== GROUP-LEVEL SORT HELPERS ======
-   We rank each symbol group by the *max* value of the active sortKey.
-   This moves whole groups up/down when sorting. */
+/* ===========================
+   SECTION: GROUP HELPERS
+   =========================== */
+function groupBySymbol(rows) {
+  const g = {};
+  for (const r of rows) {
+    (g[r.symbol_raw] ??= []).push(r);
+  }
+  return g;
+}
+
+function presentSet(group) {
+  const s = new Set();
+  for (const r of group) s.add(r.exchange);
+  return s;
+}
+
+function presencePass(s, preset) {
+  if (!preset) return true;
+  if (preset === 'not_dydx') return !s.has('dydx');
+  if (preset === 'not_drift') return !s.has('drift');
+  if (preset === 'not_hyperliquid') return !s.has('hyperliquid');
+  return true;
+}
+
 function groupMaxValue(group, key) {
   let top = null;
   for (const r of group) {
-    const v = num(r[key]);
+    let v = null;
+    if (key === 'leverage_max') v = r.leverage_max_num;
+    else if (key === 'volume_24h_usd') v = r.volume_num;
+    else if (key === 'open_interest_usd') v = r.oi_num;
+    else if (key === 'vol_oi_ratio') v = r.vol_oi_ratio;
+    else if (key === 'vol_vs_base_x') v = r.vol_vs_base_x ?? null;
+    else if (key === 'oi_vs_base_x') v = r.oi_vs_base_x ?? null;
     if (v !== null) top = (top === null ? v : Math.max(top, v));
   }
-  return top; // can be null if all missing
+  return top;
 }
 
-/* ====== RENDER ====== */
+/* ===========================
+   SECTION: BASELINE COMPARISON
+   =========================== */
+function injectBaselineComparisons(groups, baseline) {
+  for (const sym in groups) {
+    const g = groups[sym];
+    const base = g.find(r => r.exchange === baseline);
+    const baseVol = base ? num(base.volume_24h_usd) : null;
+    const baseOI  = base ? num(base.open_interest_usd) : null;
+
+    for (const r of g) {
+      if (base && r.exchange === baseline) {
+        r.vol_vs_base_x = null; // show "selected"
+        r.oi_vs_base_x  = null;
+      } else {
+        const v = num(r.volume_24h_usd);
+        const o = num(r.open_interest_usd);
+        r.vol_vs_base_x = (v !== null && baseVol && baseVol > 0) ? v / baseVol : null;
+        r.oi_vs_base_x  = (o !== null && baseOI && baseOI > 0) ? o / baseOI : null;
+      }
+    }
+  }
+}
+
+/* ===========================
+   SECTION: RENDER TABLE
+   =========================== */
 function renderTable(data) {
   if (!data || data.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="7" class="empty">No rows match the current filters.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="10" class="empty">No rows match the current filters.</td></tr>`;
     summary.textContent = '';
     return;
   }
 
-  // group by symbol
-  const groups = {};
-  for (const r of data) {
-    const sym = (r.symbol_raw || '').toUpperCase();
-    (groups[sym] ??= []).push(r);
-  }
+  // group & baseline inject
+  let groups = groupBySymbol(data);
+  injectBaselineComparisons(groups, baselineSel.value);
 
-  // ORDER GROUPS:
-  // - if sortKey is set: order by group max of that metric (desc/asc)
-  // - else: alphabetical by symbol
-  let symbols = Object.keys(groups);
+  // apply presence filter on groups
+  const preset = presenceEl.value;
+  let symbols = Object.keys(groups).filter(sym => presencePass(presentSet(groups[sym]), preset));
+
+  // group order: by sortKey max, else alphabetic
   if (sortKey) {
     const dir = (sortDir === 'asc') ? 1 : -1;
     symbols.sort((a, b) => {
       const av = groupMaxValue(groups[a], sortKey);
       const bv = groupMaxValue(groups[b], sortKey);
       if (av === null && bv === null) return a.localeCompare(b);
-      if (av === null) return 1;   // nulls last
+      if (av === null) return 1;
       if (bv === null) return -1;
       return (av < bv ? -1 : av > bv ? 1 : 0) * dir;
     });
@@ -154,16 +316,19 @@ function renderTable(data) {
     symbols.sort((a,b) => a.localeCompare(b));
   }
 
-  // BUILD HTML
+  // build HTML
   let html = ''; let total = 0;
   for (const sym of symbols) {
-    let group = groups[sym];
+    // rows in group (apply chip visibility)
+    let group = groups[sym].filter(r => exchangeOn[r.exchange]);
+    if (group.length === 0) continue;
 
-    // order rows in each group by sortKey (if any), else by exchange
+    // sort rows in group by sortKey or exchange
     if (sortKey) {
       const dir = (sortDir === 'asc') ? 1 : -1;
       group = group.slice().sort((a,b) => {
-        const av = num(a[sortKey]); const bv = num(b[sortKey]);
+        const av = groupValueKey(a, sortKey);
+        const bv = groupValueKey(b, sortKey);
         if (av === null && bv === null) return String(a.exchange).localeCompare(String(b.exchange));
         if (av === null) return 1;
         if (bv === null) return -1;
@@ -173,32 +338,330 @@ function renderTable(data) {
       group = group.slice().sort((a,b) => String(a.exchange).localeCompare(String(b.exchange)));
     }
 
-    html += `<tr class="group-row"><td colspan="7">${sym}</td></tr>`;
+    html += `<tr class="group-row" data-sym="${sym}"><td colspan="10">${sym}<span class="sub">(click to view charts)</span></td></tr>`;
     for (const r of group) {
       html += `
         <tr class="${exClass(r.exchange)}">
-          <td>${r.exchange ?? ''}</td>
-          <td><span class="badge">${r.market_type ?? ''}</span></td>
-          <td>${r.symbol_raw ?? ''}</td>
-          <td>${r.leverage_max !== '' && r.leverage_max != null ? `${r.leverage_max}x` : ''}</td>
-          <td>${fmt(r.price_usd, 6)}</td>
-          <td>${fmt(r.volume_24h_usd, 2)}</td>
-          <td>${fmt(r.open_interest_usd, 2)}</td>
+          <td>${r.exchange}</td>
+          <td><span class="badge">${r.market_type || ''}</span></td>
+          <td>${r.symbol_raw}</td>
+          <td>${r.leverage_max_num ? `${r.leverage_max_num}x` : ''}</td>
+          <td>${priceUsd(r.price_usd)}</td>
+          <td>${usdShort(r.volume_24h_usd)}</td>
+          <td>${usdShort(r.open_interest_usd)}</td>
+          <td>${fmtRatio(r.vol_oi_ratio)}</td>
+          <td>${fmtX(r.vol_vs_base_x, r.exchange === baselineSel.value)}</td>
+          <td>${fmtX(r.oi_vs_base_x,  r.exchange === baselineSel.value)}</td>
         </tr>`;
       total++;
     }
+
+    // drawer mount (lazy: empty container; fill on first open)
+    html += `<tr class="drawer-row" data-sym="${sym}" style="display:none;">
+      <td colspan="10">
+        <div class="drawer" id="drawer-${sym}"></div>
+      </td>
+    </tr>`;
   }
 
   tbody.innerHTML = html;
   summary.textContent = `Showing ${total} rows across ${symbols.length} symbols.`;
+
+  // attach group click handlers
+  Array.from(document.querySelectorAll('.group-row')).forEach(tr => {
+    tr.addEventListener('click', () => toggleDrawer(tr.dataset.sym));
+  });
 }
 
-/* ====== FILTERS & SORT ====== */
+function groupValueKey(r, key) {
+  if (key === 'leverage_max') return r.leverage_max_num;
+  if (key === 'volume_24h_usd') return r.volume_num;
+  if (key === 'open_interest_usd') return r.oi_num;
+  if (key === 'vol_oi_ratio') return r.vol_oi_ratio;
+  if (key === 'vol_vs_base_x') return r.vol_vs_base_x ?? null;
+  if (key === 'oi_vs_base_x') return r.oi_vs_base_x ?? null;
+  return null;
+}
+
+/* ===========================
+   SECTION: DRAWER + CHARTS
+   =========================== */
+async function toggleDrawer(symbol) {
+  const row = document.querySelector(`.drawer-row[data-sym="${symbol}"]`);
+  const host = document.getElementById(`drawer-${symbol}`);
+  const isOpen = row.style.display !== 'none';
+
+  if (isOpen) {
+    row.style.display = 'none';
+    return;
+  }
+  row.style.display = '';
+
+  if (!drawers.has(symbol)) {
+    host.innerHTML = renderDrawerSkeleton(symbol);
+    await buildChartsFor(symbol, host);
+    drawers.set(symbol, host);
+  }
+}
+
+function renderDrawerSkeleton(symbol) {
+  return `
+    <div class="chart-head">
+      <div><strong>${symbol}</strong> • Charts</div>
+      <div class="toggles">
+        <label class="tog"><input type="checkbox" data-line="drift" checked> drift</label>
+        <label class="tog"><input type="checkbox" data-line="dydx" checked> dYdX</label>
+        <label class="tog"><input type="checkbox" data-line="hyperliquid" checked> hyperliquid</label>
+        <span style="width:14px;"></span>
+        <label class="tog">Rolling:
+          <input type="number" min="1" step="1" value="1" style="width:70px" title="1 = daily (no rolling)"/>
+        </label>
+      </div>
+    </div>
+    <div class="charts">
+      <div class="chart-card">
+        <div class="chart-head">24h Volume (USD)</div>
+        <canvas id="vol-${symbol}"></canvas>
+      </div>
+      <div class="chart-card">
+        <div class="chart-head">Open Interest (USD)</div>
+        <canvas id="oi-${symbol}"></canvas>
+      </div>
+    </div>
+    <div class="note">Note: Volume uses <strong>rolling sum</strong>; Open Interest uses <strong>rolling mean</strong>. Set Rolling = 1 for daily (no rolling).</div>
+    <div class="changes" id="changes-${symbol}"><h4>Recent changes</h4><ul></ul></div>
+  `;
+}
+
+async function buildChartsFor(symbol, host) {
+  // 1) load history (cache)
+  const hist = await loadHistory(symbol);
+
+  // 2) build datasets for selected exchanges
+  const rollingInput = host.querySelector('input[type="number"]');
+  const toggles = host.querySelectorAll('input[type="checkbox"][data-line]');
+  const volCtx = host.querySelector(`canvas#vol-${symbol}`).getContext('2d');
+  const oiCtx  = host.querySelector(`canvas#oi-${symbol}`).getContext('2d');
+
+  // default lines respect chips visibility
+  toggles.forEach(cb => {
+    const ex = cb.dataset.line;
+    cb.checked = !!exchangeOn[ex];
+  });
+
+  // chart instance holders
+  let charts = { vol:null, oi:null };
+
+  const rebuild = () => {
+    const win = Math.max(1, parseInt(rollingInput.value || '1', 10));
+    const activeEx = Array.from(toggles).filter(cb => cb.checked).map(cb => cb.dataset.line);
+
+    const { labels, volSeries, oiSeries } = seriesFor(symbol, hist, activeEx, win);
+
+    // build / update charts
+    const volData = {
+      labels,
+      datasets: activeEx.map(ex => ({
+        label: ex,
+        data: volSeries[ex] || [],
+        borderColor: COLORS[ex],
+        backgroundColor: COLORS[ex],
+        tension: 0.2,
+        fill: false,
+        pointRadius: 0
+      }))
+    };
+    const oiData = {
+      labels,
+      datasets: activeEx.map(ex => ({
+        label: ex,
+        data: oiSeries[ex] || [],
+        borderColor: COLORS[ex],
+        backgroundColor: COLORS[ex],
+        tension: 0.2,
+        fill: false,
+        pointRadius: 0
+      }))
+    };
+
+    const commonOpts = (title) => ({
+      responsive: true,
+      animation: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { labels: { color: '#cbd5e1' } },
+        tooltip: { callbacks: {
+          label: (ctx) => `${ctx.dataset.label}: ${usdShort(ctx.parsed.y)}`
+        }}
+      },
+      scales: {
+        x: { ticks:{ color:'#9ca3af', maxRotation:0, autoSkip:true } },
+        y: { ticks:{ color:'#9ca3af', callback:(v)=>usdShort(v) }, grid:{ color:'#1f2937' } }
+      }
+    });
+
+    if (charts.vol) charts.vol.destroy();
+    if (charts.oi) charts.oi.destroy();
+    charts.vol = new Chart(volCtx, { type:'line', data: volData, options: commonOpts('Volume') });
+    charts.oi  = new Chart(oiCtx,  { type:'line', data: oiData,  options: commonOpts('OI') });
+  };
+
+  rebuild();
+
+  // handlers
+  rollingInput.addEventListener('change', rebuild);
+  toggles.forEach(cb => cb.addEventListener('change', rebuild));
+
+  // 3) render changes
+  renderChanges(symbol, hist);
+}
+
+/* ===========================
+   SECTION: HISTORY LOADING
+   =========================== */
+async function loadCSV(url) {
+  const res = await fetch(url, { cache: 'no-store' });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const text = await res.text();
+  const parsed = Papa.parse(text, { header:true, skipEmptyLines:true });
+  return parsed.data || [];
+}
+
+async function loadHistory(symbol) {
+  if (historyCache.has(symbol)) return historyCache.get(symbol);
+
+  const y = new Date().getUTCFullYear();
+  const urls = [
+    `data/history/metrics_${y}.csv`,
+    `data/history/metrics_${y-1}.csv`
+  ];
+
+  let rows = [];
+  for (const u of urls) {
+    try {
+      const data = await loadCSV(u);
+      rows = rows.concat(data);
+    } catch (_) { /* ignore 404 */ }
+  }
+
+  // filter for symbol, normalize
+  rows = rows
+    .map(ensureColumns)
+    .filter(r => r.symbol_raw === symbol);
+
+  // index by date, build date set
+  const byDateEx = new Map(); // key: date|ex -> {vol,oi,mt,lev}
+  const dates = new Set();
+  for (const r of rows) {
+    const d = r.daily_snapshot || '';
+    if (!d) continue;
+    dates.add(d);
+    byDateEx.set(`${d}|${r.exchange}`, {
+      vol: r.volume_num || 0,
+      oi:  r.oi_num || 0,
+      mt:  r.market_type || '',
+      lev: r.leverage_max_num || null
+    });
+  }
+
+  const dateArr = Array.from(dates).sort(); // ISO dates sort lexicographically
+
+  const result = {
+    dates: dateArr,
+    byEx: {
+      drift:        dateArr.map(d => byDateEx.get(`${d}|drift`)?.vol ?? 0),
+      dydx:         dateArr.map(d => byDateEx.get(`${d}|dydx`)?.vol ?? 0),
+      hyperliquid:  dateArr.map(d => byDateEx.get(`${d}|hyperliquid`)?.vol ?? 0)
+    },
+    byExOI: {
+      drift:        dateArr.map(d => byDateEx.get(`${d}|drift`)?.oi ?? 0),
+      dydx:         dateArr.map(d => byDateEx.get(`${d}|dydx`)?.oi ?? 0),
+      hyperliquid:  dateArr.map(d => byDateEx.get(`${d}|hyperliquid`)?.oi ?? 0)
+    },
+    meta: { changes: detectChanges(dateArr, byDateEx) }
+  };
+  historyCache.set(symbol, result);
+  return result;
+}
+
+function rollingSum(arr, win) {
+  if (win <= 1) return arr.slice();
+  const out = Array(arr.length).fill(0);
+  let s = 0;
+  for (let i=0; i<arr.length; i++) {
+    s += arr[i] || 0;
+    if (i >= win) s -= arr[i - win] || 0;
+    out[i] = (i >= win - 1) ? s : null; // null until enough history
+  }
+  return out;
+}
+
+function rollingMean(arr, win) {
+  if (win <= 1) return arr.slice();
+  const sum = rollingSum(arr, win);
+  return sum.map((v,i) => v === null ? null : (v / win));
+}
+
+function seriesFor(symbol, hist, activeEx, win) {
+  const labels = hist.dates;
+  const volSeries = {};
+  const oiSeries  = {};
+  for (const ex of activeEx) {
+    const vol = hist.byEx[ex] || [];
+    const oi  = hist.byExOI[ex] || [];
+    volSeries[ex] = rollingSum(vol, win);
+    oiSeries[ex]  = rollingMean(oi, win);
+  }
+  return { labels, volSeries, oiSeries };
+}
+
+/* ===========================
+   SECTION: CHANGE TRACKER
+   =========================== */
+function detectChanges(dateArr, byDateEx) {
+  const exes = ['dydx','drift','hyperliquid'];
+  const changes = [];
+  for (const ex of exes) {
+    let prev = null;
+    for (const d of dateArr) {
+      const cur = byDateEx.get(`${d}|${ex}`) || null;
+      if (!cur) continue;
+      if (prev) {
+        if ((prev.mt || '') !== (cur.mt || '')) {
+          changes.push({ date:d, ex, field:'market_type', from: prev.mt || '—', to: cur.mt || '—' });
+        }
+        const pl = prev.lev ?? '—', cl = cur.lev ?? '—';
+        if (pl !== cl) {
+          changes.push({ date:d, ex, field:'leverage_max', from: pl, to: cl });
+        }
+      }
+      prev = cur;
+    }
+  }
+  return changes.sort((a,b) => a.date < b.date ? 1 : -1); // newest first
+}
+
+function renderChanges(symbol, hist) {
+  const box = document.getElementById(`changes-${symbol}`);
+  const ul = box.querySelector('ul');
+  if (!hist.meta.changes.length) {
+    ul.innerHTML = `<li>No changes detected in recent history.</li>`;
+    return;
+  }
+  ul.innerHTML = hist.meta.changes.slice(0, 12).map(c =>
+    `<li>${c.date} • <strong>${c.ex}</strong> • ${c.field}: <em>${c.from}</em> → <em>${c.to}</em></li>`
+  ).join('');
+}
+
+/* ===========================
+   SECTION: FILTERS & SORT
+   =========================== */
 function applyFilters() {
   const q = String(symFilterEl.value || '').trim().toUpperCase();
   const t = String(typeFilterEl.value || '').toUpperCase();
 
   rowsFiltered = rowsRaw.filter(r => {
+    if (!exchangeOn[r.exchange]) return false;
     if (q && !String(r.symbol_raw || '').toUpperCase().includes(q)) return false;
     if (t && String(r.market_type || '').toUpperCase() !== t) return false;
     return true;
@@ -223,27 +686,51 @@ function setSort(newKey) {
   renderTable(rowsFiltered);
 }
 
-/* ====== LOAD CSV (auto) ====== */
-function fetchCSV() {
-  fetch('data/latest/all_latest.csv', { cache: 'no-store' })
-    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.text(); })
-    .then(text => {
-      const parsed = Papa.parse(text, { header: true, skipEmptyLines: true });
-      rowsRaw = (parsed.data || []).map(ensureColumns);
-      applyFilters();
-    })
-    .catch(err => {
-      tbody.innerHTML = `<tr><td colspan="7" class="empty">Failed to load all_latest.csv (${String(err)}). Ensure it's in the repo root.</td></tr>`;
-    });
+/* ===========================
+   SECTION: LOAD LATEST CSV
+   =========================== */
+async function fetchLatestCSV() {
+  const res = await fetch(LATEST_CSV_URL, { cache:'no-store' });
+  // last updated
+  const lm = res.headers.get('Last-Modified');
+  if (lm) {
+    const dt = new Date(lm);
+    titleEl.textContent = `DexHawk — Last updated ${dt.toISOString().replace('T',' ').replace('.000Z','Z')}`;
+    lastUpdatedEl.textContent = `Last updated (UTC): ${dt.toISOString().replace('.000Z','Z')}`;
+  } else {
+    titleEl.textContent = `DexHawk — Last updated (unknown)`;
+  }
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const text = await res.text();
+  const parsed = Papa.parse(text, { header:true, skipEmptyLines:true });
+  rowsRaw = (parsed.data || []).map(ensureColumns);
+  applyFilters();
 }
 
-/* ====== EVENTS ====== */
+/* ===========================
+   SECTION: EVENTS
+   =========================== */
 symFilterEl.addEventListener('input', applyFilters);
 typeFilterEl.addEventListener('change', applyFilters);
+presenceEl.addEventListener('change', applyFilters);
+baselineSel.addEventListener('change', () => renderTable(rowsFiltered));
 headerCells.forEach(th => th.addEventListener('click', () => setSort(th.dataset.key)));
 
-/* boot */
-fetchCSV();
+chipsWrap.addEventListener('click', (e) => {
+  const el = e.target.closest('.chip'); if (!el) return;
+  const ex = el.dataset.ex;
+  el.classList.toggle('on');
+  exchangeOn[ex] = el.classList.contains('on');
+  applyFilters();
+});
+
+/* ===========================
+   BOOT
+   =========================== */
+fetchLatestCSV().catch(err => {
+  tbody.innerHTML = `<tr><td colspan="10" class="empty">Failed to load ${LATEST_CSV_URL} (${String(err)}).</td></tr>`;
+  lastUpdatedEl.textContent = 'Failed to read last-updated time.';
+});
 </script>
 </body>
 </html>
