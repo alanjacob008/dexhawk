@@ -1,0 +1,43 @@
+name: daily-snapshot
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "2 0 * * *"   # 00:02 UTC daily
+
+permissions:
+  contents: write
+
+jobs:
+  snap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Compute UTC date
+        id: utc
+        run: echo "today=$(python - <<'PY'\nimport datetime as dt;print(dt.datetime.utcnow().date().isoformat())\nPY\n)" >> $GITHUB_OUTPUT
+
+      - name: Run orchestrator
+        run: python -m src.orchestrate --date "${{ steps.utc.outputs.today }}"
+
+      - name: Commit data changes
+        run: |
+          git config user.name  "gh-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/** symbol_registry/** || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "data: snapshot ${{ steps.utc.outputs.today }}"
+            git push
+          fi
