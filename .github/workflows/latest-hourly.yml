@@ -1,18 +1,19 @@
-concurrency:
-  group: daily-snapshot
-  cancel-in-progress: true
-
-name: daily-snapshot
+name: latest-hourly
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "2 0 * * *"   # 00:02 UTC daily
+    - cron: "5 * * * *"   # every hour at :05 UTC
+
+# serialize all data writes (hourly & daily) to avoid push races
+concurrency:
+  group: data-writes
+  cancel-in-progress: true
 
 permissions:
   contents: write
 
 jobs:
-  snap:
+  latest:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -32,17 +33,18 @@ jobs:
         id: utc
         run: echo "today=$(python - <<'PY'\nimport datetime as dt;print(dt.datetime.utcnow().date().isoformat())\nPY\n)" >> $GITHUB_OUTPUT
 
-      - name: Run orchestrator
-        run: python -m src.orchestrate --date "${{ steps.utc.outputs.today }}"
+      # run the same orchestrator but publish ONLY to data/latest (no daily/history)
+      - name: Run orchestrator (latest-only)
+        run: python -m src.orchestrate --date "${{ steps.utc.outputs.today }}" --mode latest
 
-      - name: Commit data changes
+      - name: Commit latest changes
         run: |
           git config user.name  "gh-actions"
           git config user.email "actions@users.noreply.github.com"
-          git add data/** symbol_registry/** || true
+          git add data/latest/** symbol_registry/** || true
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "data: snapshot ${{ steps.utc.outputs.today }}"
+            git commit -m "data: latest refresh ${{ steps.utc.outputs.today }}"
             git push
           fi
