@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>DexHawk — Last updated …</title>
+<title>DexHawk</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <!-- libs -->
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
@@ -14,11 +14,12 @@
   h1 { font-size: 20px; margin: 0 0 10px 0; font-weight:700; }
   .last-updated { color: var(--muted); font-size: 12px; margin: 2px 0 16px; }
 
-  /* chips */
+  /* chips/buttons */
   .chips { display:flex; gap:8px; flex-wrap:wrap; margin: 0 0 10px; }
-  .chip { padding:6px 10px; border-radius:999px; border:1px solid var(--border); cursor:pointer; user-select:none; font-size:12px; }
+  .chip { padding:6px 10px; border-radius:999px; border:1px solid var(--border); cursor:pointer; user-select:none; font-size:12px; background:#121a30; }
   .chip.on { box-shadow: inset 0 0 0 999px #ffffff10; }
   .chip.drift { background:#8d23ff22; } .chip.dydx { background:#2382ff22; } .chip.hyper { background:#25ff7122; }
+  .chip.refresh { background:#0b1325; }
 
   .toolbar { display:flex; flex-wrap:wrap; gap:12px; align-items:center; background:var(--panel); border:1px solid var(--border); padding:12px; border-radius:12px; }
   .toolbar label { font-size:12px; color: var(--muted); }
@@ -62,11 +63,12 @@
     <h1 id="title">DexHawk</h1>
     <div class="last-updated" id="lastUpdated">Loading last updated…</div>
 
-    <!-- exchange chips -->
+    <!-- exchange chips + refresh -->
     <div class="chips" id="exchangeChips">
       <span class="chip drift on" data-ex="drift">drift</span>
       <span class="chip dydx on" data-ex="dydx">dydx</span>
       <span class="chip hyper on" data-ex="hyperliquid">hyperliquid</span>
+      <span class="chip refresh" id="refreshBtn">↻ Refresh data</span>
     </div>
 
     <!-- toolbar -->
@@ -114,7 +116,7 @@
           </tr>
         </thead>
         <tbody id="body">
-          <tr><td colspan="10" class="empty">Loading data/latest/all_latest.csv…</td></tr>
+          <tr><td colspan="10" class="empty">Loading latest CSV…</td></tr>
         </tbody>
       </table>
     </div>
@@ -122,8 +124,26 @@
   </div>
 
 <script>
+/* ============================================================
+   CONFIG — you set this like below and we’ll build URLs.
+   You used:
+   const RAW_BASE = "https://raw.githubusercontent.com/alanjacob008/dexhawk/";
+   We’ll append "main/..." automatically.
+   ============================================================ */
+const RAW_BASE = "https://raw.githubusercontent.com/alanjacob008/dexhawk/"; // <-- your value
+const USE_RAW = RAW_BASE.includes("raw.githubusercontent.com");
+const BRANCH = "main"; // change if your data branch differs
+const LATEST_CSV_URL = USE_RAW
+  ? `${RAW_BASE}${BRANCH}/data/latest/all_latest.csv`
+  : 'data/latest/all_latest.csv';
+const HISTORY_URLS = (year) => USE_RAW
+  ? [ `${RAW_BASE}${BRANCH}/data/history/metrics_${year}.csv`,
+      `${RAW_BASE}${BRANCH}/data/history/metrics_${year-1}.csv` ]
+  : [ `data/history/metrics_${year}.csv`,
+      `data/history/metrics_${year-1}.csv` ];
+
 /* ===========================
-   SECTION: STATE & CONSTANTS
+   STATE & CONSTANTS
    =========================== */
 const tbody   = document.getElementById('body');
 const summary = document.getElementById('summary');
@@ -135,21 +155,21 @@ const chipsWrap    = document.getElementById('exchangeChips');
 const lastUpdatedEl = document.getElementById('lastUpdated');
 const titleEl = document.getElementById('title');
 const headerCells  = Array.from(document.querySelectorAll('thead th.sortable'));
+const refreshBtn = document.getElementById('refreshBtn');
 
 const COLORS = { drift:'#8d23ff', dydx:'#2382ff', hyperliquid:'#25ff71' };
 
-let rowsRaw = [];      // parsed CSV rows (normalized keys)
-let rowsFiltered = []; // after all filters
+let rowsRaw = [];
+let rowsFiltered = [];
 let exchangeOn = { drift:true, dydx:true, hyperliquid:true };
-let sortKey = null;    // 'leverage_max' | 'volume_24h_usd' | 'open_interest_usd' | 'vol_oi_ratio' | 'vol_vs_base_x' | 'oi_vs_base_x'
-let sortDir = 'desc';  // 'asc' | 'desc'
-let drawers = new Map(); // symbol_raw -> drawer DOM (for toggle/state)
-let historyCache = new Map(); // symbol_raw -> { dates:[], byEx:{dydx:[], drift:[], hyperliquid:[]}, meta:{changes:[]}}
-
-const LATEST_CSV_URL = 'data/latest/all_latest.csv';
+let sortKey = null;
+let sortDir = 'desc';
+let drawers = new Map();     // symbol_raw -> {host, charts}
+let historyCache = new Map();// symbol_raw -> history payload
+let lastLoadTs = 0;
 
 /* ===========================
-   SECTION: FORMATTERS
+   FORMATTERS
    =========================== */
 const num = (v) => { if (v === null || v === undefined || v === '') return null; const n = Number(v); return Number.isFinite(n) ? n : null; };
 
@@ -162,7 +182,6 @@ function usdShort(n) {
   if (v >= 1e3)  return `${sign}$${(v/1e3).toFixed(2)}K`;
   return `${sign}$${v.toFixed(2)}`;
 }
-
 function priceUsd(p) {
   const x = num(p); if (x === null) return '';
   if (x < 1) return `$${x.toFixed(6)}`;
@@ -170,25 +189,21 @@ function priceUsd(p) {
   if (x < 10000) return `$${x.toFixed(2)}`;
   return `$${x.toFixed(0)}`;
 }
-
 function ratioVolOI(row) {
   const v = num(row.volume_24h_usd), oi = num(row.open_interest_usd);
   if (v === null || oi === null || oi === 0) return null;
   return v / oi;
 }
-
 function fmtRatio(val) {
   if (val === null) return '—';
   if (!isFinite(val)) return '—';
   return val.toFixed(2);
 }
-
 function fmtX(val, isSelected=false) {
   if (isSelected) return 'selected';
   if (val === null || !isFinite(val) || val <= 0) return '—';
   return `${val.toFixed(2)}×`;
 }
-
 function exClass(ex) {
   const s = String(ex||'').toLowerCase();
   if (s.includes('drift')) return 'ex-drift';
@@ -198,7 +213,7 @@ function exClass(ex) {
 }
 
 /* ===========================
-   SECTION: NORMALIZATION
+   NORMALIZATION
    =========================== */
 function ensureColumns(row) {
   const m = {}; for (const k in row) m[k.toLowerCase()] = row[k];
@@ -220,22 +235,16 @@ function ensureColumns(row) {
 }
 
 /* ===========================
-   SECTION: GROUP HELPERS
+   GROUP HELPERS
    =========================== */
 function groupBySymbol(rows) {
   const g = {};
-  for (const r of rows) {
-    (g[r.symbol_raw] ??= []).push(r);
-  }
+  for (const r of rows) (g[r.symbol_raw] ??= []).push(r);
   return g;
 }
-
 function presentSet(group) {
-  const s = new Set();
-  for (const r of group) s.add(r.exchange);
-  return s;
+  const s = new Set(); for (const r of group) s.add(r.exchange); return s;
 }
-
 function presencePass(s, preset) {
   if (!preset) return true;
   if (preset === 'not_dydx') return !s.has('dydx');
@@ -243,7 +252,6 @@ function presencePass(s, preset) {
   if (preset === 'not_hyperliquid') return !s.has('hyperliquid');
   return true;
 }
-
 function groupMaxValue(group, key) {
   let top = null;
   for (const r of group) {
@@ -260,7 +268,7 @@ function groupMaxValue(group, key) {
 }
 
 /* ===========================
-   SECTION: BASELINE COMPARISON
+   BASELINE COMPARISON
    =========================== */
 function injectBaselineComparisons(groups, baseline) {
   for (const sym in groups) {
@@ -268,14 +276,12 @@ function injectBaselineComparisons(groups, baseline) {
     const base = g.find(r => r.exchange === baseline);
     const baseVol = base ? num(base.volume_24h_usd) : null;
     const baseOI  = base ? num(base.open_interest_usd) : null;
-
     for (const r of g) {
       if (base && r.exchange === baseline) {
-        r.vol_vs_base_x = null; // show "selected"
+        r.vol_vs_base_x = null;
         r.oi_vs_base_x  = null;
       } else {
-        const v = num(r.volume_24h_usd);
-        const o = num(r.open_interest_usd);
+        const v = num(r.volume_24h_usd), o = num(r.open_interest_usd);
         r.vol_vs_base_x = (v !== null && baseVol && baseVol > 0) ? v / baseVol : null;
         r.oi_vs_base_x  = (o !== null && baseOI && baseOI > 0) ? o / baseOI : null;
       }
@@ -284,24 +290,45 @@ function injectBaselineComparisons(groups, baseline) {
 }
 
 /* ===========================
-   SECTION: RENDER TABLE
+   CHART DISPOSAL (fixes “glitch on chips click”)
    =========================== */
+function disposeAllDrawers() {
+  drawers.forEach(({host, charts}) => {
+    try { charts?.vol?.destroy?.(); } catch(_) {}
+    try { charts?.oi?.destroy?.(); } catch(_) {}
+  });
+  drawers.clear();
+}
+
+/* ===========================
+   RENDER TABLE
+   =========================== */
+function groupValueKey(r, key) {
+  if (key === 'leverage_max') return r.leverage_max_num;
+  if (key === 'volume_24h_usd') return r.volume_num;
+  if (key === 'open_interest_usd') return r.oi_num;
+  if (key === 'vol_oi_ratio') return r.vol_oi_ratio;
+  if (key === 'vol_vs_base_x') return r.vol_vs_base_x ?? null;
+  if (key === 'oi_vs_base_x') return r.oi_vs_base_x ?? null;
+  return null;
+}
+
 function renderTable(data) {
+  // dispose existing charts & drawer refs BEFORE nuking DOM
+  disposeAllDrawers();
+
   if (!data || data.length === 0) {
     tbody.innerHTML = `<tr><td colspan="10" class="empty">No rows match the current filters.</td></tr>`;
     summary.textContent = '';
     return;
   }
 
-  // group & baseline inject
   let groups = groupBySymbol(data);
   injectBaselineComparisons(groups, baselineSel.value);
 
-  // apply presence filter on groups
   const preset = presenceEl.value;
   let symbols = Object.keys(groups).filter(sym => presencePass(presentSet(groups[sym]), preset));
 
-  // group order: by sortKey max, else alphabetic
   if (sortKey) {
     const dir = (sortDir === 'asc') ? 1 : -1;
     symbols.sort((a, b) => {
@@ -316,19 +343,15 @@ function renderTable(data) {
     symbols.sort((a,b) => a.localeCompare(b));
   }
 
-  // build HTML
   let html = ''; let total = 0;
   for (const sym of symbols) {
-    // rows in group (apply chip visibility)
     let group = groups[sym].filter(r => exchangeOn[r.exchange]);
     if (group.length === 0) continue;
 
-    // sort rows in group by sortKey or exchange
     if (sortKey) {
       const dir = (sortDir === 'asc') ? 1 : -1;
       group = group.slice().sort((a,b) => {
-        const av = groupValueKey(a, sortKey);
-        const bv = groupValueKey(b, sortKey);
+        const av = groupValueKey(a, sortKey), bv = groupValueKey(b, sortKey);
         if (av === null && bv === null) return String(a.exchange).localeCompare(String(b.exchange));
         if (av === null) return 1;
         if (bv === null) return -1;
@@ -356,52 +379,41 @@ function renderTable(data) {
       total++;
     }
 
-    // drawer mount (lazy: empty container; fill on first open)
     html += `<tr class="drawer-row" data-sym="${sym}" style="display:none;">
-      <td colspan="10">
-        <div class="drawer" id="drawer-${sym}"></div>
-      </td>
+      <td colspan="10"><div class="drawer" id="drawer-${sym}"></div></td>
     </tr>`;
   }
 
   tbody.innerHTML = html;
   summary.textContent = `Showing ${total} rows across ${symbols.length} symbols.`;
 
-  // attach group click handlers
   Array.from(document.querySelectorAll('.group-row')).forEach(tr => {
     tr.addEventListener('click', () => toggleDrawer(tr.dataset.sym));
   });
 }
 
-function groupValueKey(r, key) {
-  if (key === 'leverage_max') return r.leverage_max_num;
-  if (key === 'volume_24h_usd') return r.volume_num;
-  if (key === 'open_interest_usd') return r.oi_num;
-  if (key === 'vol_oi_ratio') return r.vol_oi_ratio;
-  if (key === 'vol_vs_base_x') return r.vol_vs_base_x ?? null;
-  if (key === 'oi_vs_base_x') return r.oi_vs_base_x ?? null;
-  return null;
-}
-
 /* ===========================
-   SECTION: DRAWER + CHARTS
+   DRAWER + CHARTS
    =========================== */
 async function toggleDrawer(symbol) {
   const row = document.querySelector(`.drawer-row[data-sym="${symbol}"]`);
   const host = document.getElementById(`drawer-${symbol}`);
   const isOpen = row.style.display !== 'none';
-
   if (isOpen) {
+    // destroy charts when closing
+    const ref = drawers.get(symbol);
+    if (ref?.charts) {
+      try { ref.charts.vol?.destroy?.(); } catch(_) {}
+      try { ref.charts.oi?.destroy?.(); } catch(_) {}
+    }
+    drawers.delete(symbol);
     row.style.display = 'none';
     return;
   }
   row.style.display = '';
-
-  if (!drawers.has(symbol)) {
-    host.innerHTML = renderDrawerSkeleton(symbol);
-    await buildChartsFor(symbol, host);
-    drawers.set(symbol, host);
-  }
+  // if reopened after render, always rebuild fresh
+  host.innerHTML = renderDrawerSkeleton(symbol);
+  await buildChartsFor(symbol, host);
 }
 
 function renderDrawerSkeleton(symbol) {
@@ -434,301 +446,196 @@ function renderDrawerSkeleton(symbol) {
 }
 
 async function buildChartsFor(symbol, host) {
-  // 1) load history (cache)
   const hist = await loadHistory(symbol);
-
-  // 2) build datasets for selected exchanges
   const rollingInput = host.querySelector('input[type="number"]');
   const toggles = host.querySelectorAll('input[type="checkbox"][data-line]');
   const volCtx = host.querySelector(`canvas#vol-${symbol}`).getContext('2d');
   const oiCtx  = host.querySelector(`canvas#oi-${symbol}`).getContext('2d');
+  toggles.forEach(cb => { const ex = cb.dataset.line; cb.checked = !!exchangeOn[ex]; });
 
-  // default lines respect chips visibility
-  toggles.forEach(cb => {
-    const ex = cb.dataset.line;
-    cb.checked = !!exchangeOn[ex];
-  });
-
-  // chart instance holders
-  let charts = { vol:null, oi:null };
+  // keep refs so we can destroy on close/re-render
+  const charts = { vol:null, oi:null };
+  drawers.set(symbol, { host, charts });
 
   const rebuild = () => {
     const win = Math.max(1, parseInt(rollingInput.value || '1', 10));
     const activeEx = Array.from(toggles).filter(cb => cb.checked).map(cb => cb.dataset.line);
-
     const { labels, volSeries, oiSeries } = seriesFor(symbol, hist, activeEx, win);
+    const volData = { labels, datasets: activeEx.map(ex => ({ label: ex, data: volSeries[ex]||[], borderColor: COLORS[ex], backgroundColor: COLORS[ex], tension:0.2, fill:false, pointRadius:0 })) };
+    const oiData  = { labels, datasets: activeEx.map(ex => ({ label: ex, data: oiSeries[ex]||[],  borderColor: COLORS[ex], backgroundColor: COLORS[ex], tension:0.2, fill:false, pointRadius:0 })) };
+    const opts = { responsive:true, animation:false, interaction:{ mode:'index', intersect:false }, plugins:{ legend:{ labels:{ color:'#cbd5e1' } }, tooltip:{ callbacks:{ label:(c)=>`${c.dataset.label}: ${usdShort(c.parsed.y)}` } } }, scales:{ x:{ ticks:{ color:'#9ca3af', maxRotation:0, autoSkip:true } }, y:{ ticks:{ color:'#9ca3af', callback:(v)=>usdShort(v) }, grid:{ color:'#1f2937' } } } };
 
-    // build / update charts
-    const volData = {
-      labels,
-      datasets: activeEx.map(ex => ({
-        label: ex,
-        data: volSeries[ex] || [],
-        borderColor: COLORS[ex],
-        backgroundColor: COLORS[ex],
-        tension: 0.2,
-        fill: false,
-        pointRadius: 0
-      }))
-    };
-    const oiData = {
-      labels,
-      datasets: activeEx.map(ex => ({
-        label: ex,
-        data: oiSeries[ex] || [],
-        borderColor: COLORS[ex],
-        backgroundColor: COLORS[ex],
-        tension: 0.2,
-        fill: false,
-        pointRadius: 0
-      }))
-    };
-
-    const commonOpts = (title) => ({
-      responsive: true,
-      animation: false,
-      interaction: { mode: 'index', intersect: false },
-      plugins: {
-        legend: { labels: { color: '#cbd5e1' } },
-        tooltip: { callbacks: {
-          label: (ctx) => `${ctx.dataset.label}: ${usdShort(ctx.parsed.y)}`
-        }}
-      },
-      scales: {
-        x: { ticks:{ color:'#9ca3af', maxRotation:0, autoSkip:true } },
-        y: { ticks:{ color:'#9ca3af', callback:(v)=>usdShort(v) }, grid:{ color:'#1f2937' } }
-      }
-    });
-
-    if (charts.vol) charts.vol.destroy();
-    if (charts.oi) charts.oi.destroy();
-    charts.vol = new Chart(volCtx, { type:'line', data: volData, options: commonOpts('Volume') });
-    charts.oi  = new Chart(oiCtx,  { type:'line', data: oiData,  options: commonOpts('OI') });
+    try { charts.vol?.destroy?.(); } catch(_) {}
+    try { charts.oi?.destroy?.(); } catch(_) {}
+    charts.vol = new Chart(volCtx, { type:'line', data:volData, options:opts });
+    charts.oi  = new Chart(oiCtx,  { type:'line', data:oiData,  options:opts });
   };
 
   rebuild();
-
-  // handlers
   rollingInput.addEventListener('change', rebuild);
   toggles.forEach(cb => cb.addEventListener('change', rebuild));
-
-  // 3) render changes
   renderChanges(symbol, hist);
 }
 
 /* ===========================
-   SECTION: HISTORY LOADING
+   HISTORY LOADING (cache-busted)
    =========================== */
 async function loadCSV(url) {
-  const res = await fetch(url, { cache: 'no-store' });
+  const res = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const text = await res.text();
   const parsed = Papa.parse(text, { header:true, skipEmptyLines:true });
   return parsed.data || [];
 }
-
 async function loadHistory(symbol) {
   if (historyCache.has(symbol)) return historyCache.get(symbol);
-
   const y = new Date().getUTCFullYear();
-  const urls = [
-    `data/history/metrics_${y}.csv`,
-    `data/history/metrics_${y-1}.csv`
-  ];
-
+  const urls = HISTORY_URLS(y);
   let rows = [];
   for (const u of urls) {
-    try {
-      const data = await loadCSV(u);
-      rows = rows.concat(data);
-    } catch (_) { /* ignore 404 */ }
+    try { rows = rows.concat(await loadCSV(u)); } catch (_) {}
   }
-
-  // filter for symbol, normalize
-  rows = rows
-    .map(ensureColumns)
-    .filter(r => r.symbol_raw === symbol);
-
-  // index by date, build date set
-  const byDateEx = new Map(); // key: date|ex -> {vol,oi,mt,lev}
-  const dates = new Set();
+  rows = rows.map(ensureColumns).filter(r => r.symbol_raw === symbol);
+  const byDateEx = new Map(), dates = new Set();
   for (const r of rows) {
-    const d = r.daily_snapshot || '';
-    if (!d) continue;
+    const d = r.daily_snapshot || ''; if (!d) continue;
     dates.add(d);
-    byDateEx.set(`${d}|${r.exchange}`, {
-      vol: r.volume_num || 0,
-      oi:  r.oi_num || 0,
-      mt:  r.market_type || '',
-      lev: r.leverage_max_num || null
-    });
+    byDateEx.set(`${d}|${r.exchange}`, { vol: r.volume_num || 0, oi: r.oi_num || 0, mt: r.market_type || '', lev: r.leverage_max_num || null });
   }
-
-  const dateArr = Array.from(dates).sort(); // ISO dates sort lexicographically
-
+  const dateArr = Array.from(dates).sort();
   const result = {
     dates: dateArr,
-    byEx: {
-      drift:        dateArr.map(d => byDateEx.get(`${d}|drift`)?.vol ?? 0),
-      dydx:         dateArr.map(d => byDateEx.get(`${d}|dydx`)?.vol ?? 0),
-      hyperliquid:  dateArr.map(d => byDateEx.get(`${d}|hyperliquid`)?.vol ?? 0)
-    },
-    byExOI: {
-      drift:        dateArr.map(d => byDateEx.get(`${d}|drift`)?.oi ?? 0),
-      dydx:         dateArr.map(d => byDateEx.get(`${d}|dydx`)?.oi ?? 0),
-      hyperliquid:  dateArr.map(d => byDateEx.get(`${d}|hyperliquid`)?.oi ?? 0)
-    },
+    byEx: { drift: dateArr.map(d => byDateEx.get(`${d}|drift`)?.vol ?? 0),
+            dydx:  dateArr.map(d => byDateEx.get(`${d}|dydx`)?.vol ?? 0),
+            hyperliquid: dateArr.map(d => byDateEx.get(`${d}|hyperliquid`)?.vol ?? 0) },
+    byExOI: { drift: dateArr.map(d => byDateEx.get(`${d}|drift`)?.oi ?? 0),
+              dydx:  dateArr.map(d => byDateEx.get(`${d}|dydx`)?.oi ?? 0),
+              hyperliquid: dateArr.map(d => byDateEx.get(`${d}|hyperliquid`)?.oi ?? 0) },
     meta: { changes: detectChanges(dateArr, byDateEx) }
   };
   historyCache.set(symbol, result);
   return result;
 }
-
-function rollingSum(arr, win) {
-  if (win <= 1) return arr.slice();
-  const out = Array(arr.length).fill(0);
-  let s = 0;
-  for (let i=0; i<arr.length; i++) {
-    s += arr[i] || 0;
-    if (i >= win) s -= arr[i - win] || 0;
-    out[i] = (i >= win - 1) ? s : null; // null until enough history
-  }
-  return out;
-}
-
-function rollingMean(arr, win) {
-  if (win <= 1) return arr.slice();
-  const sum = rollingSum(arr, win);
-  return sum.map((v,i) => v === null ? null : (v / win));
-}
-
+function rollingSum(arr, win){ if (win<=1) return arr.slice(); const out=Array(arr.length).fill(0); let s=0; for(let i=0;i<arr.length;i++){ s+=arr[i]||0; if(i>=win)s-=arr[i-win]||0; out[i]=(i>=win-1)?s:null;} return out; }
+function rollingMean(arr, win){ if (win<=1) return arr.slice(); const sum=rollingSum(arr,win); return sum.map((v)=>v===null?null:(v/win)); }
 function seriesFor(symbol, hist, activeEx, win) {
-  const labels = hist.dates;
-  const volSeries = {};
-  const oiSeries  = {};
-  for (const ex of activeEx) {
-    const vol = hist.byEx[ex] || [];
-    const oi  = hist.byExOI[ex] || [];
-    volSeries[ex] = rollingSum(vol, win);
-    oiSeries[ex]  = rollingMean(oi, win);
-  }
+  const labels = hist.dates; const volSeries = {}; const oiSeries = {};
+  for (const ex of activeEx) { const vol = hist.byEx[ex]||[]; const oi = hist.byExOI[ex]||[]; volSeries[ex]=rollingSum(vol,win); oiSeries[ex]=rollingMean(oi,win); }
   return { labels, volSeries, oiSeries };
 }
 
 /* ===========================
-   SECTION: CHANGE TRACKER
+   CHANGE TRACKER
    =========================== */
 function detectChanges(dateArr, byDateEx) {
-  const exes = ['dydx','drift','hyperliquid'];
-  const changes = [];
+  const exes = ['dydx','drift','hyperliquid']; const changes=[];
   for (const ex of exes) {
-    let prev = null;
+    let prev=null;
     for (const d of dateArr) {
-      const cur = byDateEx.get(`${d}|${ex}`) || null;
-      if (!cur) continue;
+      const cur = byDateEx.get(`${d}|${ex}`) || null; if (!cur) continue;
       if (prev) {
-        if ((prev.mt || '') !== (cur.mt || '')) {
-          changes.push({ date:d, ex, field:'market_type', from: prev.mt || '—', to: cur.mt || '—' });
-        }
-        const pl = prev.lev ?? '—', cl = cur.lev ?? '—';
-        if (pl !== cl) {
-          changes.push({ date:d, ex, field:'leverage_max', from: pl, to: cl });
-        }
+        if ((prev.mt||'') !== (cur.mt||'')) changes.push({ date:d, ex, field:'market_type', from: prev.mt||'—', to: cur.mt||'—' });
+        const pl = prev.lev ?? '—', cl = cur.lev ?? '—'; if (pl !== cl) changes.push({ date:d, ex, field:'leverage_max', from: pl, to: cl });
       }
       prev = cur;
     }
   }
-  return changes.sort((a,b) => a.date < b.date ? 1 : -1); // newest first
+  return changes.sort((a,b)=> a.date < b.date ? 1 : -1);
 }
-
 function renderChanges(symbol, hist) {
-  const box = document.getElementById(`changes-${symbol}`);
-  const ul = box.querySelector('ul');
-  if (!hist.meta.changes.length) {
-    ul.innerHTML = `<li>No changes detected in recent history.</li>`;
-    return;
-  }
-  ul.innerHTML = hist.meta.changes.slice(0, 12).map(c =>
-    `<li>${c.date} • <strong>${c.ex}</strong> • ${c.field}: <em>${c.from}</em> → <em>${c.to}</em></li>`
-  ).join('');
+  const box = document.getElementById(`changes-${symbol}`); const ul = box.querySelector('ul');
+  if (!hist.meta.changes.length) { ul.innerHTML = `<li>No changes detected in recent history.</li>`; return; }
+  ul.innerHTML = hist.meta.changes.slice(0,12).map(c=>`<li>${c.date} • <strong>${c.ex}</strong> • ${c.field}: <em>${c.from}</em> → <em>${c.to}</em></li>`).join('');
 }
 
 /* ===========================
-   SECTION: FILTERS & SORT
+   FILTERS & SORT
    =========================== */
 function applyFilters() {
   const q = String(symFilterEl.value || '').trim().toUpperCase();
   const t = String(typeFilterEl.value || '').toUpperCase();
-
   rowsFiltered = rowsRaw.filter(r => {
     if (!exchangeOn[r.exchange]) return false;
     if (q && !String(r.symbol_raw || '').toUpperCase().includes(q)) return false;
     if (t && String(r.market_type || '').toUpperCase() !== t) return false;
     return true;
   });
-
   renderTable(rowsFiltered);
 }
-
 function setSort(newKey) {
-  if (sortKey === newKey) {
-    sortDir = (sortDir === 'asc') ? 'desc' : 'asc';
-  } else {
-    sortKey = newKey;
-    sortDir = 'desc';
-  }
+  if (sortKey === newKey) sortDir = (sortDir === 'asc') ? 'desc' : 'asc';
+  else { sortKey = newKey; sortDir = 'desc'; }
   headerCells.forEach(th => {
     th.classList.toggle('active', th.dataset.key === sortKey);
     const arrow = th.querySelector('.arrow');
-    if (arrow) arrow.textContent = (th.dataset.key === sortKey)
-      ? (sortDir === 'asc' ? '↑' : '↓') : '↕';
+    if (arrow) arrow.textContent = (th.dataset.key === sortKey) ? (sortDir === 'asc' ? '↑' : '↓') : '↕';
   });
   renderTable(rowsFiltered);
 }
 
 /* ===========================
-   SECTION: LOAD LATEST CSV
+   LOAD LATEST CSV (cache-busted) + Last-updated fallback
    =========================== */
 async function fetchLatestCSV() {
-  const res = await fetch(LATEST_CSV_URL, { cache:'no-store' });
-  // last updated
+  const url = `${LATEST_CSV_URL}?t=${Date.now()}`;
+  const res = await fetch(url, { cache:'no-store' });
+
+  // Prefer Last-Modified header, else use fetch time
+  let caption;
   const lm = res.headers.get('Last-Modified');
   if (lm) {
     const dt = new Date(lm);
-    titleEl.textContent = `DexHawk — Last updated ${dt.toISOString().replace('T',' ').replace('.000Z','Z')}`;
-    lastUpdatedEl.textContent = `Last updated (UTC): ${dt.toISOString().replace('.000Z','Z')}`;
+    caption = dt.toISOString().replace('.000Z','Z');
   } else {
-    titleEl.textContent = `DexHawk — Last updated (unknown)`;
+    caption = new Date().toISOString().replace('.000Z','Z'); // fallback
   }
+  titleEl.textContent = `DexHawk — Last updated ${caption.replace('T',' ')}`;
+  lastUpdatedEl.textContent = `Last updated (UTC): ${caption}`;
+
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const text = await res.text();
   const parsed = Papa.parse(text, { header:true, skipEmptyLines:true });
   rowsRaw = (parsed.data || []).map(ensureColumns);
+  lastLoadTs = Date.now();
   applyFilters();
 }
 
 /* ===========================
-   SECTION: EVENTS
+   EVENTS
    =========================== */
+document.getElementById('exchangeChips').addEventListener('click', (e) => {
+  const el = e.target.closest('.chip'); if (!el) return;
+  if (el.id === 'refreshBtn') return; // handled separately
+  const ex = el.dataset.ex;
+  el.classList.toggle('on');
+  exchangeOn[ex] = el.classList.contains('on');
+  applyFilters(); // will dispose charts + rebuild table safely
+});
+
+document.getElementById('refreshBtn').addEventListener('click', async () => {
+  refreshBtn.textContent = '↻ Refreshing…';
+  try { await fetchLatestCSV(); } finally { refreshBtn.textContent = '↻ Refresh data'; }
+});
+
 symFilterEl.addEventListener('input', applyFilters);
 typeFilterEl.addEventListener('change', applyFilters);
 presenceEl.addEventListener('change', applyFilters);
 baselineSel.addEventListener('change', () => renderTable(rowsFiltered));
 headerCells.forEach(th => th.addEventListener('click', () => setSort(th.dataset.key)));
 
-chipsWrap.addEventListener('click', (e) => {
-  const el = e.target.closest('.chip'); if (!el) return;
-  const ex = el.dataset.ex;
-  el.classList.toggle('on');
-  exchangeOn[ex] = el.classList.contains('on');
-  applyFilters();
+/* Optional: auto-refresh when tab regains focus (if older than 5 min) */
+document.addEventListener('visibilitychange', async () => {
+  if (document.visibilityState === 'visible') {
+    const STALE_MS = 5 * 60 * 1000;
+    if (Date.now() - lastLoadTs > STALE_MS) {
+      try { await fetchLatestCSV(); } catch (_) {}
+    }
+  }
 });
 
-/* ===========================
-   BOOT
-   =========================== */
+/* BOOT */
 fetchLatestCSV().catch(err => {
-  tbody.innerHTML = `<tr><td colspan="10" class="empty">Failed to load ${LATEST_CSV_URL} (${String(err)}).</td></tr>`;
+  tbody.innerHTML = `<tr><td colspan="10" class="empty">Failed to load latest CSV (${String(err)}). Check RAW_BASE or file path.</td></tr>`;
   lastUpdatedEl.textContent = 'Failed to read last-updated time.';
 });
 </script>
