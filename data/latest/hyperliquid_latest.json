@@ -4,33 +4,33 @@
     "market_type": "CROSS",
     "symbol_raw": "BTC-USD",
     "leverage_max": 40,
-    "price_usd": 65621.0,
-    "volume_24h_usd": 2433852391.138328,
-    "open_interest_base": 21018.0793,
-    "open_interest_usd": 1379227381.7453,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 66326.0,
+    "volume_24h_usd": 2182147263.260494,
+    "open_interest_base": 21057.35196,
+    "open_interest_usd": 1396649926.09896,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ETH-USD",
     "leverage_max": 25,
-    "price_usd": 1932.1,
-    "volume_24h_usd": 1079251684.4549077,
-    "open_interest_base": 577690.5641999998,
-    "open_interest_usd": 1116155939.0908196,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1955.1,
+    "volume_24h_usd": 980592953.9108803,
+    "open_interest_base": 587070.5832,
+    "open_interest_usd": 1147781697.21432,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ATOM-USD",
     "leverage_max": 5,
-    "price_usd": 1.7975,
-    "volume_24h_usd": 426563.292605,
-    "open_interest_base": 1515684.8800000001,
-    "open_interest_usd": 2724443.5718000005,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.814,
+    "volume_24h_usd": 379063.8021309999,
+    "open_interest_base": 1514376.36,
+    "open_interest_usd": 2747078.7170400005,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -41,183 +41,183 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "DYDX-USD",
     "leverage_max": 5,
-    "price_usd": 0.09053,
-    "volume_24h_usd": 158918.03491,
-    "open_interest_base": 19913825.2,
-    "open_interest_usd": 1802798.595356,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.09215,
+    "volume_24h_usd": 162018.353542,
+    "open_interest_base": 20201345.8,
+    "open_interest_usd": 1861554.01547,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SOL-USD",
     "leverage_max": 20,
-    "price_usd": 83.425,
-    "volume_24h_usd": 385552187.1189995,
-    "open_interest_base": 3369911.58,
-    "open_interest_usd": 281134873.5615,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 84.285,
+    "volume_24h_usd": 351049257.94197005,
+    "open_interest_base": 3253254.8199999984,
+    "open_interest_usd": 274200582.50369984,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "AVAX-USD",
     "leverage_max": 10,
-    "price_usd": 9.001,
-    "volume_24h_usd": 7479605.678181003,
-    "open_interest_base": 3734713.6999999997,
-    "open_interest_usd": 33616158.01369999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 9.0695,
+    "volume_24h_usd": 6667278.963916002,
+    "open_interest_base": 3728422.3800000004,
+    "open_interest_usd": 33814926.775410004,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BNB-USD",
     "leverage_max": 10,
-    "price_usd": 619.26,
-    "volume_24h_usd": 3804883.4443900003,
-    "open_interest_base": 38905.588,
-    "open_interest_usd": 24092674.42488,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 621.52,
+    "volume_24h_usd": 3931535.7059200006,
+    "open_interest_base": 38848.512,
+    "open_interest_usd": 24145127.17824,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "APE-USD",
     "leverage_max": 5,
-    "price_usd": 0.10075,
-    "volume_24h_usd": 188140.882107,
-    "open_interest_base": 7390166.199999999,
-    "open_interest_usd": 744559.24465,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.10195,
+    "volume_24h_usd": 184023.5721960001,
+    "open_interest_base": 7577494.4,
+    "open_interest_usd": 772525.55408,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "OP-USD",
     "leverage_max": 10,
-    "price_usd": 0.12165,
-    "volume_24h_usd": 805092.5118890002,
-    "open_interest_base": 26587448.4,
-    "open_interest_usd": 3234363.0978599996,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.12305,
+    "volume_24h_usd": 820211.8561320003,
+    "open_interest_base": 27334748.4,
+    "open_interest_usd": 3363540.79062,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "LTC-USD",
     "leverage_max": 10,
-    "price_usd": 53.16,
-    "volume_24h_usd": 3070769.5867400016,
-    "open_interest_base": 322657.28,
-    "open_interest_usd": 17152461.0048,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 53.995,
+    "volume_24h_usd": 2851109.384260002,
+    "open_interest_base": 322322.54,
+    "open_interest_usd": 17403805.5473,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ARB-USD",
     "leverage_max": 10,
-    "price_usd": 0.09975,
-    "volume_24h_usd": 3211424.2173170005,
-    "open_interest_base": 28271799.999999996,
-    "open_interest_usd": 2820112.05,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.10116,
+    "volume_24h_usd": 3221240.8828440006,
+    "open_interest_base": 29354244.6,
+    "open_interest_usd": 2969475.383736,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "DOGE-USD",
     "leverage_max": 10,
-    "price_usd": 0.09208,
-    "volume_24h_usd": 10669957.153940996,
-    "open_interest_base": 215994412.0,
-    "open_interest_usd": 19888765.45696,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.093015,
+    "volume_24h_usd": 11951829.639265006,
+    "open_interest_base": 233419146.0,
+    "open_interest_usd": 21711481.86519,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "INJ-USD",
     "leverage_max": 10,
-    "price_usd": 2.9979,
-    "volume_24h_usd": 1505861.2956299998,
-    "open_interest_base": 664622.0,
-    "open_interest_usd": 1992470.2938,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 3.041,
+    "volume_24h_usd": 1192080.5749599994,
+    "open_interest_base": 696140.8,
+    "open_interest_usd": 2116964.1728000003,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SUI-USD",
     "leverage_max": 10,
-    "price_usd": 0.8868,
-    "volume_24h_usd": 23689134.92045498,
-    "open_interest_base": 15505734.600000001,
-    "open_interest_usd": 13750485.443280002,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.90025,
+    "volume_24h_usd": 22396496.163424008,
+    "open_interest_base": 14774266.6,
+    "open_interest_usd": 13300533.506649999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "KPEPE-USD",
     "leverage_max": 10,
-    "price_usd": 0.003439,
-    "volume_24h_usd": 9725961.796307998,
-    "open_interest_base": 3029588658.0,
-    "open_interest_usd": 10418755.394862,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.003468,
+    "volume_24h_usd": 9224614.241848001,
+    "open_interest_base": 2951721052.0,
+    "open_interest_usd": 10236568.608336,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "CRV-USD",
     "leverage_max": 10,
-    "price_usd": 0.2414,
-    "volume_24h_usd": 4184511.0815299987,
-    "open_interest_base": 23388114.2,
-    "open_interest_usd": 5645890.76788,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.24355,
+    "volume_24h_usd": 3466468.7709819996,
+    "open_interest_base": 23158142.999999996,
+    "open_interest_usd": 5640165.727649999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "LDO-USD",
     "leverage_max": 10,
-    "price_usd": 0.2996,
-    "volume_24h_usd": 713606.7195249998,
-    "open_interest_base": 12239429.8,
-    "open_interest_usd": 3666933.1680799997,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.3052,
+    "volume_24h_usd": 689300.6110510001,
+    "open_interest_base": 12188538.4,
+    "open_interest_usd": 3719941.9196800003,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "LINK-USD",
     "leverage_max": 10,
-    "price_usd": 8.6498,
-    "volume_24h_usd": 4861465.699399999,
-    "open_interest_base": 2331456.3999999994,
-    "open_interest_usd": 20166631.568719998,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 8.77,
+    "volume_24h_usd": 3995374.9498599996,
+    "open_interest_base": 2327736.8,
+    "open_interest_usd": 20414251.735999998,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "STX-USD",
     "leverage_max": 5,
-    "price_usd": 0.2529,
-    "volume_24h_usd": 232053.02951,
-    "open_interest_base": 2466822.4,
-    "open_interest_usd": 623859.38496,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.25495,
+    "volume_24h_usd": 222738.9330829999,
+    "open_interest_base": 2509884.6,
+    "open_interest_usd": 639895.07877,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -228,18 +228,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "CFX-USD",
     "leverage_max": 5,
-    "price_usd": 0.0469,
-    "volume_24h_usd": 207973.29559,
-    "open_interest_base": 11360870.0,
-    "open_interest_usd": 532824.803,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.047635,
+    "volume_24h_usd": 203413.005415,
+    "open_interest_base": 11253154.0,
+    "open_interest_usd": 536043.99079,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -250,84 +250,84 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "GMX-USD",
     "leverage_max": 3,
-    "price_usd": 6.74,
-    "volume_24h_usd": 147312.3516969999,
-    "open_interest_base": 46766.4,
-    "open_interest_usd": 315205.536,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 6.7405,
+    "volume_24h_usd": 157699.8033080001,
+    "open_interest_base": 49550.14,
+    "open_interest_usd": 333992.71867,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SNX-USD",
     "leverage_max": 3,
-    "price_usd": 0.31129,
-    "volume_24h_usd": 145415.26181,
-    "open_interest_base": 1788144.4,
-    "open_interest_usd": 556631.470276,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.31545,
+    "volume_24h_usd": 167879.7866179999,
+    "open_interest_base": 1820718.6,
+    "open_interest_usd": 574345.68237,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "XRP-USD",
     "leverage_max": 20,
-    "price_usd": 1.347,
-    "volume_24h_usd": 69278023.54189995,
-    "open_interest_base": 51970676.0,
-    "open_interest_usd": 70004500.572,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.3641,
+    "volume_24h_usd": 66886332.88550003,
+    "open_interest_base": 50722342.0,
+    "open_interest_usd": 69190346.7222,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BCH-USD",
     "leverage_max": 10,
-    "price_usd": 438.63,
-    "volume_24h_usd": 5435821.115479997,
-    "open_interest_base": 52584.248,
-    "open_interest_usd": 23065028.70024,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 449.6,
+    "volume_24h_usd": 5128498.142920001,
+    "open_interest_base": 52581.994,
+    "open_interest_usd": 23640864.5024,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "APT-USD",
     "leverage_max": 10,
-    "price_usd": 0.9305,
-    "volume_24h_usd": 1543727.7977770006,
-    "open_interest_base": 7496106.6,
-    "open_interest_usd": 6975127.1913,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.9546,
+    "volume_24h_usd": 1508616.5010169996,
+    "open_interest_base": 7481301.84,
+    "open_interest_usd": 7141650.736464,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "AAVE-USD",
     "leverage_max": 10,
-    "price_usd": 113.5,
-    "volume_24h_usd": 4154794.6347999987,
-    "open_interest_base": 195600.2800000001,
-    "open_interest_usd": 22200631.78000001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 114.63,
+    "volume_24h_usd": 3651045.6868000007,
+    "open_interest_base": 197479.44,
+    "open_interest_usd": 22637068.2072,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "COMP-USD",
     "leverage_max": 5,
-    "price_usd": 17.605,
-    "volume_24h_usd": 132418.18157,
-    "open_interest_base": 40125.5,
-    "open_interest_usd": 706409.4275,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 17.83,
+    "volume_24h_usd": 132571.07678,
+    "open_interest_base": 40550.92,
+    "open_interest_usd": 723022.9035999998,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -338,18 +338,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "WLD-USD",
     "leverage_max": 10,
-    "price_usd": 0.383,
-    "volume_24h_usd": 3359939.8552519996,
-    "open_interest_base": 30732909.399999995,
-    "open_interest_usd": 11770704.300199999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.3894,
+    "volume_24h_usd": 2754365.510494999,
+    "open_interest_base": 30992106.2,
+    "open_interest_usd": 12068326.154280001,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -360,7 +360,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -371,7 +371,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -382,7 +382,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -393,73 +393,73 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "YGG-USD",
     "leverage_max": 3,
-    "price_usd": 0.03765,
-    "volume_24h_usd": 242691.1515569999,
-    "open_interest_base": 9277530.0,
-    "open_interest_usd": 349299.00450000004,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0386,
+    "volume_24h_usd": 228857.562979,
+    "open_interest_base": 9275180.0,
+    "open_interest_usd": 358021.94800000003,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "TRX-USD",
     "leverage_max": 10,
-    "price_usd": 0.28058,
-    "volume_24h_usd": 1178347.7088300004,
-    "open_interest_base": 27248910.0,
-    "open_interest_usd": 7645499.1678,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.28134,
+    "volume_24h_usd": 1109432.62279,
+    "open_interest_base": 27136328.0,
+    "open_interest_usd": 7634534.51952,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "KSHIB-USD",
     "leverage_max": 10,
-    "price_usd": 0.00552,
-    "volume_24h_usd": 1338740.207159,
-    "open_interest_base": 325614610.0,
-    "open_interest_usd": 1797392.6472,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.005615,
+    "volume_24h_usd": 1103458.4912500002,
+    "open_interest_base": 326303498.0,
+    "open_interest_usd": 1832194.14127,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "UNI-USD",
     "leverage_max": 10,
-    "price_usd": 3.7365,
-    "volume_24h_usd": 4080507.7729999986,
-    "open_interest_base": 3049527.0,
-    "open_interest_usd": 11394557.635499999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 3.816,
+    "volume_24h_usd": 3857297.1319499975,
+    "open_interest_base": 3079158.6,
+    "open_interest_usd": 11750069.2176,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SEI-USD",
     "leverage_max": 10,
-    "price_usd": 0.0681,
-    "volume_24h_usd": 780645.7818259995,
-    "open_interest_base": 27249592.0,
-    "open_interest_usd": 1855697.2151999997,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.06905,
+    "volume_24h_usd": 790728.7299999999,
+    "open_interest_base": 27493150.0,
+    "open_interest_usd": 1898402.0075,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "RUNE-USD",
     "leverage_max": 5,
-    "price_usd": 0.39225,
-    "volume_24h_usd": 153297.218241,
-    "open_interest_base": 2438204.8,
-    "open_interest_usd": 956385.8327999999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.3956,
+    "volume_24h_usd": 136394.803827,
+    "open_interest_base": 2455196.8,
+    "open_interest_usd": 971275.85408,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -470,7 +470,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -481,7 +481,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -492,7 +492,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -503,18 +503,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ZRO-USD",
     "leverage_max": 5,
-    "price_usd": 1.7845,
-    "volume_24h_usd": 14818572.094169995,
-    "open_interest_base": 20248237.800000004,
-    "open_interest_usd": 36132980.354100004,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.8335,
+    "volume_24h_usd": 12200432.236529998,
+    "open_interest_base": 20524863.000000004,
+    "open_interest_usd": 37632336.3105,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -525,51 +525,51 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "DOT-USD",
     "leverage_max": 10,
-    "price_usd": 1.528,
-    "volume_24h_usd": 8100388.3022,
-    "open_interest_base": 6155623.0,
-    "open_interest_usd": 9405791.944,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.5661,
+    "volume_24h_usd": 8117616.621509998,
+    "open_interest_base": 6081391.2,
+    "open_interest_usd": 9524066.75832,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BANANA-USD",
     "leverage_max": 3,
-    "price_usd": 4.1255,
-    "volume_24h_usd": 49554.94242,
-    "open_interest_base": 33739.4,
-    "open_interest_usd": 139191.8947,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 4.2082,
+    "volume_24h_usd": 48792.45267,
+    "open_interest_base": 34435.2,
+    "open_interest_usd": 144910.20863999997,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "TRB-USD",
     "leverage_max": 3,
-    "price_usd": 13.78,
-    "volume_24h_usd": 170435.02536,
-    "open_interest_base": 26099.32,
-    "open_interest_usd": 359648.6296,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 14.01,
+    "volume_24h_usd": 146191.3076699999,
+    "open_interest_base": 25649.5,
+    "open_interest_usd": 359349.495,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "FTT-USD",
     "leverage_max": 3,
-    "price_usd": 0.2928,
-    "volume_24h_usd": 11893.571549,
-    "open_interest_base": 235333.6,
-    "open_interest_usd": 68905.67808,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.29838,
+    "volume_24h_usd": 22816.876101,
+    "open_interest_base": 269926.6,
+    "open_interest_usd": 80540.69890799999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -580,7 +580,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -591,7 +591,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -602,18 +602,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ARK-USD",
     "leverage_max": 3,
-    "price_usd": 0.1755,
-    "volume_24h_usd": 24712.03577,
-    "open_interest_base": 799794.0,
-    "open_interest_usd": 140363.84699999998,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.1776,
+    "volume_24h_usd": 33898.33754,
+    "open_interest_base": 815120.0,
+    "open_interest_usd": 144765.312,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -624,7 +624,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -635,7 +635,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -646,29 +646,29 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BIGTIME-USD",
     "leverage_max": 3,
-    "price_usd": 0.0139,
-    "volume_24h_usd": 160900.78405,
-    "open_interest_base": 12349042.0,
-    "open_interest_usd": 171651.6838,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.014,
+    "volume_24h_usd": 147475.1098660001,
+    "open_interest_base": 12626048.0,
+    "open_interest_usd": 176764.672,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "KAS-USD",
     "leverage_max": 3,
-    "price_usd": 0.029329,
-    "volume_24h_usd": 235086.119214,
-    "open_interest_base": 24029434.0,
-    "open_interest_usd": 704759.269786,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.029615,
+    "volume_24h_usd": 203420.077968,
+    "open_interest_base": 24018366.0,
+    "open_interest_usd": 711303.90909,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -679,106 +679,106 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BLUR-USD",
     "leverage_max": 3,
-    "price_usd": 0.019674,
-    "volume_24h_usd": 168847.7922540001,
-    "open_interest_base": 26846632.0,
-    "open_interest_usd": 528180.637968,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0198,
+    "volume_24h_usd": 158799.463857,
+    "open_interest_base": 26593442.0,
+    "open_interest_usd": 526550.1516000001,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "TIA-USD",
     "leverage_max": 10,
-    "price_usd": 0.3178,
-    "volume_24h_usd": 1947580.8673450002,
-    "open_interest_base": 6018335.599999999,
-    "open_interest_usd": 1912627.0536799997,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.32505,
+    "volume_24h_usd": 1883463.3507339999,
+    "open_interest_base": 6025561.6,
+    "open_interest_usd": 1958608.7980799999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BSV-USD",
     "leverage_max": 3,
-    "price_usd": 15.15,
-    "volume_24h_usd": 87068.80663,
-    "open_interest_base": 69998.82,
-    "open_interest_usd": 1060482.1230000001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 15.32,
+    "volume_24h_usd": 88536.07666,
+    "open_interest_base": 70077.68,
+    "open_interest_usd": 1073590.0576,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ADA-USD",
     "leverage_max": 10,
-    "price_usd": 0.2732,
-    "volume_24h_usd": 2786414.7859199992,
-    "open_interest_base": 78014550.0,
-    "open_interest_usd": 21313575.06,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.27685,
+    "volume_24h_usd": 2571900.46193,
+    "open_interest_base": 78180036.0,
+    "open_interest_usd": 21644142.966599997,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "TON-USD",
     "leverage_max": 10,
-    "price_usd": 1.2005,
-    "volume_24h_usd": 814151.7462800002,
-    "open_interest_base": 5831986.8,
-    "open_interest_usd": 7001300.153399999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.2015,
+    "volume_24h_usd": 861532.8082999999,
+    "open_interest_base": 5901761.4,
+    "open_interest_usd": 7090966.3221,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MINA-USD",
     "leverage_max": 3,
-    "price_usd": 0.05609,
-    "volume_24h_usd": 94763.138079,
-    "open_interest_base": 5724336.0,
-    "open_interest_usd": 321078.00624,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.05645,
+    "volume_24h_usd": 102617.936423,
+    "open_interest_base": 5583660.0,
+    "open_interest_usd": 315197.607,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "POLYX-USD",
     "leverage_max": 3,
-    "price_usd": 0.0419,
-    "volume_24h_usd": 25262.019655,
-    "open_interest_base": 5733304.0,
-    "open_interest_usd": 240225.4376,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0421,
+    "volume_24h_usd": 24207.774138,
+    "open_interest_base": 5630626.0,
+    "open_interest_usd": 237049.3546,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "GAS-USD",
     "leverage_max": 3,
-    "price_usd": 1.5834,
-    "volume_24h_usd": 75072.5517,
-    "open_interest_base": 94246.2,
-    "open_interest_usd": 149229.43308,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.6,
+    "volume_24h_usd": 81454.8038,
+    "open_interest_base": 95834.6,
+    "open_interest_usd": 153335.36000000002,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "PENDLE-USD",
     "leverage_max": 5,
-    "price_usd": 1.258,
-    "volume_24h_usd": 860041.9014999997,
-    "open_interest_base": 3452186.0,
-    "open_interest_usd": 4342849.988,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.282,
+    "volume_24h_usd": 681732.3768000003,
+    "open_interest_base": 3458434.0,
+    "open_interest_usd": 4433712.388,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -789,18 +789,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "FET-USD",
     "leverage_max": 5,
-    "price_usd": 0.15005,
-    "volume_24h_usd": 356687.9449600001,
-    "open_interest_base": 7115776.0,
-    "open_interest_usd": 1067722.1888,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.15215,
+    "volume_24h_usd": 338377.5306599999,
+    "open_interest_base": 7068606.0,
+    "open_interest_usd": 1075488.4029,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -811,40 +811,40 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "NEAR-USD",
     "leverage_max": 10,
-    "price_usd": 1.146,
-    "volume_24h_usd": 6087899.328920001,
-    "open_interest_base": 9147971.000000002,
-    "open_interest_usd": 10483574.766,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.1705,
+    "volume_24h_usd": 5864158.286969998,
+    "open_interest_base": 9646029.8,
+    "open_interest_usd": 11290677.880900001,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MEME-USD",
     "leverage_max": 3,
-    "price_usd": 0.000574,
-    "volume_24h_usd": 488829.271997,
-    "open_interest_base": 970215278.0,
-    "open_interest_usd": 556903.569572,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.000581,
+    "volume_24h_usd": 512616.5991710001,
+    "open_interest_base": 953485542.0,
+    "open_interest_usd": 553975.099902,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ORDI-USD",
     "leverage_max": 3,
-    "price_usd": 2.3815,
-    "volume_24h_usd": 68803.025506,
-    "open_interest_base": 68323.6,
-    "open_interest_usd": 162712.6534,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 2.434,
+    "volume_24h_usd": 66239.355015,
+    "open_interest_base": 67745.32,
+    "open_interest_usd": 164892.10888,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -855,62 +855,62 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "NEO-USD",
     "leverage_max": 5,
-    "price_usd": 2.5782,
-    "volume_24h_usd": 122959.774782,
-    "open_interest_base": 174654.4,
-    "open_interest_usd": 450293.97407999996,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 2.609,
+    "volume_24h_usd": 113446.996671,
+    "open_interest_base": 172075.4,
+    "open_interest_usd": 448944.71859999996,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ZEN-USD",
     "leverage_max": 5,
-    "price_usd": 5.244,
-    "volume_24h_usd": 309344.973233,
-    "open_interest_base": 147098.44,
-    "open_interest_usd": 771384.21936,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 5.343,
+    "volume_24h_usd": 268873.6822170001,
+    "open_interest_base": 146378.6,
+    "open_interest_usd": 782100.8598,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "FIL-USD",
     "leverage_max": 5,
-    "price_usd": 0.964,
-    "volume_24h_usd": 405539.660899,
-    "open_interest_base": 2048340.0,
-    "open_interest_usd": 1974599.76,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.982,
+    "volume_24h_usd": 360191.3715039999,
+    "open_interest_base": 2042063.0,
+    "open_interest_usd": 2005305.866,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "PYTH-USD",
     "leverage_max": 5,
-    "price_usd": 0.048,
-    "volume_24h_usd": 449266.3048989999,
-    "open_interest_base": 14583830.0,
-    "open_interest_usd": 700023.84,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.04872,
+    "volume_24h_usd": 432795.711388,
+    "open_interest_base": 14660630.0,
+    "open_interest_usd": 714265.8936,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SUSHI-USD",
     "leverage_max": 3,
-    "price_usd": 0.19765,
-    "volume_24h_usd": 241870.3071460001,
-    "open_interest_base": 2142333.8000000003,
-    "open_interest_usd": 423432.27557000006,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.2007,
+    "volume_24h_usd": 224136.214301,
+    "open_interest_base": 2138028.8,
+    "open_interest_usd": 429102.38015999994,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -921,62 +921,62 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "IMX-USD",
     "leverage_max": 5,
-    "price_usd": 0.16065,
-    "volume_24h_usd": 155601.5849540001,
-    "open_interest_base": 7011521.0,
-    "open_interest_usd": 1126400.8486499998,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.1685,
+    "volume_24h_usd": 284663.368047,
+    "open_interest_base": 7133034.0,
+    "open_interest_usd": 1201916.229,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "KBONK-USD",
     "leverage_max": 10,
-    "price_usd": 0.005821,
-    "volume_24h_usd": 997029.9932640002,
-    "open_interest_base": 659542418.0,
-    "open_interest_usd": 3839196.415178,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.005918,
+    "volume_24h_usd": 851712.4010699996,
+    "open_interest_base": 663562836.0,
+    "open_interest_usd": 3926964.8634479996,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "GMT-USD",
     "leverage_max": 3,
-    "price_usd": 0.0115,
-    "volume_24h_usd": 118647.613352,
-    "open_interest_base": 24383670.0,
-    "open_interest_usd": 280412.205,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.011515,
+    "volume_24h_usd": 118073.184834,
+    "open_interest_base": 24687132.0,
+    "open_interest_usd": 284272.32498,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SUPER-USD",
     "leverage_max": 3,
-    "price_usd": 0.1121,
-    "volume_24h_usd": 53718.71243,
-    "open_interest_base": 2193418.0,
-    "open_interest_usd": 245882.15780000002,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.1133,
+    "volume_24h_usd": 51791.91035,
+    "open_interest_base": 2203672.0,
+    "open_interest_usd": 249676.03759999998,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "USTC-USD",
     "leverage_max": 3,
-    "price_usd": 0.004946,
-    "volume_24h_usd": 46654.206741,
-    "open_interest_base": 38893494.0,
-    "open_interest_usd": 192367.22132399998,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.004901,
+    "volume_24h_usd": 49768.227978,
+    "open_interest_base": 37962892.0,
+    "open_interest_usd": 186056.133692,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -987,62 +987,62 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "JUP-USD",
     "leverage_max": 10,
-    "price_usd": 0.1655,
-    "volume_24h_usd": 2819541.8492900007,
-    "open_interest_base": 18235974.0,
-    "open_interest_usd": 3018053.697,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.16885,
+    "volume_24h_usd": 2506671.2169,
+    "open_interest_base": 18514994.0,
+    "open_interest_usd": 3126256.7369,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "KLUNC-USD",
     "leverage_max": 3,
-    "price_usd": 0.042743,
-    "volume_24h_usd": 233050.2059959999,
-    "open_interest_base": 8519550.0,
-    "open_interest_usd": 364151.12565,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.043035,
+    "volume_24h_usd": 198114.7016239999,
+    "open_interest_base": 8519116.0,
+    "open_interest_usd": 366620.15706,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "RSR-USD",
     "leverage_max": 3,
-    "price_usd": 0.001455,
-    "volume_24h_usd": 38777.884185,
-    "open_interest_base": 102610684.0,
-    "open_interest_usd": 149298.54522,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.001457,
+    "volume_24h_usd": 41918.161226,
+    "open_interest_base": 103130316.0,
+    "open_interest_usd": 150260.870412,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "GALA-USD",
     "leverage_max": 3,
-    "price_usd": 0.003476,
-    "volume_24h_usd": 248093.312391,
-    "open_interest_base": 83206516.0,
-    "open_interest_usd": 289225.849616,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.003542,
+    "volume_24h_usd": 211835.3562819999,
+    "open_interest_base": 79770152.0,
+    "open_interest_usd": 282545.878384,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "JTO-USD",
     "leverage_max": 5,
-    "price_usd": 0.26277,
-    "volume_24h_usd": 281120.5874899999,
-    "open_interest_base": 3681152.0,
-    "open_interest_usd": 967296.3110400001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.26645,
+    "volume_24h_usd": 316203.56096,
+    "open_interest_base": 3528890.0,
+    "open_interest_usd": 940272.7405000001,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1053,183 +1053,183 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ACE-USD",
     "leverage_max": 3,
-    "price_usd": 0.1546,
-    "volume_24h_usd": 565837.2661110001,
-    "open_interest_base": 2949307.54,
-    "open_interest_usd": 455962.945684,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.1566,
+    "volume_24h_usd": 649280.9202040003,
+    "open_interest_base": 2558403.06,
+    "open_interest_usd": 400645.919196,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MAV-USD",
     "leverage_max": 3,
-    "price_usd": 0.013427,
-    "volume_24h_usd": 53265.027214,
-    "open_interest_base": 11464770.0,
-    "open_interest_usd": 153937.46679,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.01361,
+    "volume_24h_usd": 69461.300319,
+    "open_interest_base": 9973026.0,
+    "open_interest_usd": 135732.88386,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "WIF-USD",
     "leverage_max": 5,
-    "price_usd": 0.19,
-    "volume_24h_usd": 1469757.289410002,
-    "open_interest_base": 25686046.0,
-    "open_interest_usd": 4880348.74,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.1937,
+    "volume_24h_usd": 1437783.2552100003,
+    "open_interest_base": 25867976.0,
+    "open_interest_usd": 5010626.9512,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "CAKE-USD",
     "leverage_max": 3,
-    "price_usd": 1.2985,
-    "volume_24h_usd": 348660.7217100001,
-    "open_interest_base": 575002.0,
-    "open_interest_usd": 746640.097,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.3145,
+    "volume_24h_usd": 358792.9212100001,
+    "open_interest_base": 593495.4,
+    "open_interest_usd": 780149.7033,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "PEOPLE-USD",
     "leverage_max": 3,
-    "price_usd": 0.006187,
-    "volume_24h_usd": 57865.415002,
-    "open_interest_base": 12518128.0,
-    "open_interest_usd": 77449.657936,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.006268,
+    "volume_24h_usd": 65402.017697,
+    "open_interest_base": 12971152.0,
+    "open_interest_usd": 81303.180736,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ENS-USD",
     "leverage_max": 5,
-    "price_usd": 5.935,
-    "volume_24h_usd": 127155.091568,
-    "open_interest_base": 316495.88,
-    "open_interest_usd": 1878403.0477999998,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 6.005,
+    "volume_24h_usd": 124295.27792,
+    "open_interest_base": 316633.2,
+    "open_interest_usd": 1901382.366,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ETC-USD",
     "leverage_max": 5,
-    "price_usd": 8.465,
-    "volume_24h_usd": 425972.323324,
-    "open_interest_base": 136569.94,
-    "open_interest_usd": 1156064.5421,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 8.6065,
+    "volume_24h_usd": 393037.5271900001,
+    "open_interest_base": 135635.62,
+    "open_interest_usd": 1167347.96353,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "XAI-USD",
     "leverage_max": 3,
-    "price_usd": 0.00915,
-    "volume_24h_usd": 44530.991061,
-    "open_interest_base": 62966773.8,
-    "open_interest_usd": 576145.98027,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0092,
+    "volume_24h_usd": 36549.490317,
+    "open_interest_base": 63056050.6,
+    "open_interest_usd": 580115.66552,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MANTA-USD",
     "leverage_max": 3,
-    "price_usd": 0.05996,
-    "volume_24h_usd": 71691.375901,
-    "open_interest_base": 2655464.4,
-    "open_interest_usd": 159221.645424,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.061,
+    "volume_24h_usd": 72708.4571659999,
+    "open_interest_base": 2470565.4000000004,
+    "open_interest_usd": 150704.48940000002,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "UMA-USD",
     "leverage_max": 3,
-    "price_usd": 0.414,
-    "volume_24h_usd": 64473.131921,
-    "open_interest_base": 518853.8,
-    "open_interest_usd": 214805.47319999998,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.42055,
+    "volume_24h_usd": 68316.918013,
+    "open_interest_base": 528163.4,
+    "open_interest_usd": 222119.11787,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ONDO-USD",
     "leverage_max": 10,
-    "price_usd": 0.2523,
-    "volume_24h_usd": 921622.0410200001,
-    "open_interest_base": 12476566.0,
-    "open_interest_usd": 3147837.6018000003,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.25433,
+    "volume_24h_usd": 753868.8251400002,
+    "open_interest_base": 12610898.0,
+    "open_interest_usd": 3207329.68834,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ALT-USD",
     "leverage_max": 3,
-    "price_usd": 0.00712,
-    "volume_24h_usd": 243263.0738120001,
-    "open_interest_base": 51858078.0,
-    "open_interest_usd": 369229.51535999996,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.00713,
+    "volume_24h_usd": 207959.453558,
+    "open_interest_base": 52857630.0,
+    "open_interest_usd": 376874.9019,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ZETA-USD",
     "leverage_max": 3,
-    "price_usd": 0.05278,
-    "volume_24h_usd": 186463.5085709999,
-    "open_interest_base": 12783261.4,
-    "open_interest_usd": 674700.536692,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.05337,
+    "volume_24h_usd": 156282.624347,
+    "open_interest_base": 12697837.6,
+    "open_interest_usd": 677683.592712,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "DYM-USD",
     "leverage_max": 3,
-    "price_usd": 0.0359,
-    "volume_24h_usd": 75825.334546,
-    "open_interest_base": 10493924.799999999,
-    "open_interest_usd": 376731.90031999996,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0363,
+    "volume_24h_usd": 75218.247573,
+    "open_interest_base": 10114570.2,
+    "open_interest_usd": 367158.89826,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MAVIA-USD",
     "leverage_max": 3,
-    "price_usd": 0.03299,
-    "volume_24h_usd": 34478.366722,
+    "price_usd": 0.03324,
+    "volume_24h_usd": 33838.567146,
     "open_interest_base": 53844776.2,
-    "open_interest_usd": 1776339.166838,
-    "daily_snapshot": "2026-03-01"
+    "open_interest_usd": 1789800.360888,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "W-USD",
     "leverage_max": 5,
-    "price_usd": 0.01832,
-    "volume_24h_usd": 172594.6629240001,
-    "open_interest_base": 45736219.4,
-    "open_interest_usd": 837887.539408,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.01849,
+    "volume_24h_usd": 170352.854289,
+    "open_interest_base": 46513181.8,
+    "open_interest_usd": 860028.731482,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1240,18 +1240,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "STRK-USD",
     "leverage_max": 5,
-    "price_usd": 0.0401,
-    "volume_24h_usd": 416549.3457319998,
-    "open_interest_base": 68978101.60000001,
-    "open_interest_usd": 2766021.87416,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.04043,
+    "volume_24h_usd": 417985.54515,
+    "open_interest_base": 68363511.60000001,
+    "open_interest_usd": 2763936.7739880006,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1262,7 +1262,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1273,29 +1273,29 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "TAO-USD",
     "leverage_max": 5,
-    "price_usd": 176.6,
-    "volume_24h_usd": 4450956.65217,
-    "open_interest_base": 87351.308,
-    "open_interest_usd": 15426240.992800001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 178.67,
+    "volume_24h_usd": 5960806.62444,
+    "open_interest_base": 86204.314,
+    "open_interest_usd": 15402124.782379998,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "AR-USD",
     "leverage_max": 5,
-    "price_usd": 1.5305,
-    "volume_24h_usd": 767813.5239609999,
-    "open_interest_base": 335072.4,
-    "open_interest_usd": 512828.3082,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.5485,
+    "volume_24h_usd": 636551.3152450004,
+    "open_interest_base": 349336.44,
+    "open_interest_usd": 540947.47734,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1306,117 +1306,117 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "KFLOKI-USD",
     "leverage_max": 5,
-    "price_usd": 0.027105,
-    "volume_24h_usd": 265858.0010709999,
-    "open_interest_base": 14218372.0,
-    "open_interest_usd": 385388.97306,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.027555,
+    "volume_24h_usd": 245961.8903829999,
+    "open_interest_base": 14055442.0,
+    "open_interest_usd": 387297.70431,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BOME-USD",
     "leverage_max": 3,
-    "price_usd": 0.000379,
-    "volume_24h_usd": 44952.111791,
-    "open_interest_base": 265506604.0,
-    "open_interest_usd": 100627.002916,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.000382,
+    "volume_24h_usd": 33225.964094,
+    "open_interest_base": 275881546.0,
+    "open_interest_usd": 105386.750572,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ETHFI-USD",
     "leverage_max": 5,
-    "price_usd": 0.4974,
-    "volume_24h_usd": 451108.5753760001,
-    "open_interest_base": 8248330.2,
-    "open_interest_usd": 4102719.44148,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.5058,
+    "volume_24h_usd": 389847.3407370002,
+    "open_interest_base": 8136495.6,
+    "open_interest_usd": 4115439.47448,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ENA-USD",
     "leverage_max": 10,
-    "price_usd": 0.1031,
-    "volume_24h_usd": 2461338.0022599986,
-    "open_interest_base": 130082978.0,
-    "open_interest_usd": 13411555.0318,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.10545,
+    "volume_24h_usd": 2188930.2009900003,
+    "open_interest_base": 130030630.0,
+    "open_interest_usd": 13711729.9335,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MNT-USD",
     "leverage_max": 5,
-    "price_usd": 0.63585,
-    "volume_24h_usd": 319817.582992,
-    "open_interest_base": 2368589.4,
-    "open_interest_usd": 1506067.56999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.6397,
+    "volume_24h_usd": 264217.039769,
+    "open_interest_base": 2374705.0,
+    "open_interest_usd": 1519098.7885,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "TNSR-USD",
     "leverage_max": 3,
-    "price_usd": 0.04455,
-    "volume_24h_usd": 114172.293338,
-    "open_interest_base": 4972234.6,
-    "open_interest_usd": 221513.05143,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.04495,
+    "volume_24h_usd": 76813.616566,
+    "open_interest_base": 5008321.4,
+    "open_interest_usd": 225124.04693,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SAGA-USD",
     "leverage_max": 3,
-    "price_usd": 0.02879,
-    "volume_24h_usd": 92761.936108,
-    "open_interest_base": 39134618.2,
-    "open_interest_usd": 1126685.6579780001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.02928,
+    "volume_24h_usd": 85217.09709,
+    "open_interest_base": 38962709.599999994,
+    "open_interest_usd": 1140828.1370879998,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MERL-USD",
     "leverage_max": 3,
-    "price_usd": 0.039057,
-    "volume_24h_usd": 243000.020186,
-    "open_interest_base": 18377062.0,
-    "open_interest_usd": 717752.910534,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.039528,
+    "volume_24h_usd": 238018.474436,
+    "open_interest_base": 18407832.0,
+    "open_interest_usd": 727624.783296,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "HBAR-USD",
     "leverage_max": 5,
-    "price_usd": 0.09715,
-    "volume_24h_usd": 695320.288724,
-    "open_interest_base": 44395652.0,
-    "open_interest_usd": 4313037.5918,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.098355,
+    "volume_24h_usd": 754685.5208489997,
+    "open_interest_base": 43998710.0,
+    "open_interest_usd": 4327493.12205,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "POPCAT-USD",
     "leverage_max": 3,
-    "price_usd": 0.04606,
-    "volume_24h_usd": 300396.0085979999,
-    "open_interest_base": 33295376.0,
-    "open_interest_usd": 1533585.01856,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.046738,
+    "volume_24h_usd": 281166.7054989999,
+    "open_interest_base": 33325576.0,
+    "open_interest_usd": 1557570.7710880002,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1427,95 +1427,95 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "EIGEN-USD",
     "leverage_max": 5,
-    "price_usd": 0.1783,
-    "volume_24h_usd": 366606.2284119999,
-    "open_interest_base": 10174864.84,
-    "open_interest_usd": 1814178.4009719999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.1794,
+    "volume_24h_usd": 339317.429754,
+    "open_interest_base": 10120701.36,
+    "open_interest_usd": 1815653.823984,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "REZ-USD",
     "leverage_max": 3,
-    "price_usd": 0.002757,
-    "volume_24h_usd": 39082.100777,
-    "open_interest_base": 52950002.0,
-    "open_interest_usd": 145983.15551399998,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.002797,
+    "volume_24h_usd": 40354.927248,
+    "open_interest_base": 52796506.0,
+    "open_interest_usd": 147671.827282,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "NOT-USD",
     "leverage_max": 3,
-    "price_usd": 0.000349,
-    "volume_24h_usd": 20939.066018,
-    "open_interest_base": 313323310.0,
-    "open_interest_usd": 109349.83519000001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.000354,
+    "volume_24h_usd": 10941.730505,
+    "open_interest_base": 322029078.0,
+    "open_interest_usd": 113998.293612,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "TURBO-USD",
     "leverage_max": 3,
-    "price_usd": 0.000948,
-    "volume_24h_usd": 71582.193287,
-    "open_interest_base": 245467712.0,
-    "open_interest_usd": 232703.390976,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.000966,
+    "volume_24h_usd": 56146.995447,
+    "open_interest_base": 246374744.0,
+    "open_interest_usd": 237998.00270399998,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BRETT-USD",
     "leverage_max": 3,
-    "price_usd": 0.006875,
-    "volume_24h_usd": 351102.519357,
-    "open_interest_base": 97325294.0,
-    "open_interest_usd": 669111.39625,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.006925,
+    "volume_24h_usd": 240799.5801269999,
+    "open_interest_base": 96087806.0,
+    "open_interest_usd": 665408.05655,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "IO-USD",
     "leverage_max": 3,
-    "price_usd": 0.10543,
-    "volume_24h_usd": 206320.4030729999,
-    "open_interest_base": 4051770.8000000003,
-    "open_interest_usd": 427178.195444,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.10648,
+    "volume_24h_usd": 195374.8976,
+    "open_interest_base": 4107806.2,
+    "open_interest_usd": 437399.204176,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ZK-USD",
     "leverage_max": 5,
-    "price_usd": 0.01851,
-    "volume_24h_usd": 271920.507976,
-    "open_interest_base": 122041388.0,
-    "open_interest_usd": 2258986.0918799997,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.018685,
+    "volume_24h_usd": 329625.4468469999,
+    "open_interest_base": 123202204.0,
+    "open_interest_usd": 2302033.18174,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BLAST-USD",
     "leverage_max": 3,
-    "price_usd": 0.000508,
-    "volume_24h_usd": 36851.819293,
-    "open_interest_base": 1610425490.0,
-    "open_interest_usd": 818096.14892,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.000512,
+    "volume_24h_usd": 27617.159773,
+    "open_interest_base": 1615511258.0,
+    "open_interest_usd": 827141.764096,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1526,29 +1526,29 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MEW-USD",
     "leverage_max": 3,
-    "price_usd": 0.000593,
-    "volume_24h_usd": 42952.161821,
-    "open_interest_base": 130971926.0,
-    "open_interest_usd": 77666.352118,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0006,
+    "volume_24h_usd": 42296.832995,
+    "open_interest_base": 128738966.0,
+    "open_interest_usd": 77243.3796,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "RENDER-USD",
     "leverage_max": 5,
-    "price_usd": 1.335,
-    "volume_24h_usd": 287684.55222,
-    "open_interest_base": 754366.2,
-    "open_interest_usd": 1007078.8769999999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.3635,
+    "volume_24h_usd": 232262.9310000001,
+    "open_interest_base": 693096.6,
+    "open_interest_usd": 945037.2140999999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1559,18 +1559,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "POL-USD",
     "leverage_max": 5,
-    "price_usd": 0.10484,
-    "volume_24h_usd": 650318.5773,
-    "open_interest_base": 20541358.0,
-    "open_interest_usd": 2153555.97272,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.10793,
+    "volume_24h_usd": 596110.3593100002,
+    "open_interest_base": 20977664.0,
+    "open_interest_usd": 2264119.27552,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1581,40 +1581,40 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "CELO-USD",
     "leverage_max": 3,
-    "price_usd": 0.07725,
-    "volume_24h_usd": 409792.54628,
-    "open_interest_base": 10553290.0,
-    "open_interest_usd": 815241.6525,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0772,
+    "volume_24h_usd": 397286.725133,
+    "open_interest_base": 10673388.0,
+    "open_interest_usd": 823985.5536000001,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "HMSTR-USD",
     "leverage_max": 3,
-    "price_usd": 0.00015,
-    "volume_24h_usd": 16539.141009,
-    "open_interest_base": 7292117064.0,
-    "open_interest_usd": 1093817.5595999998,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.000153,
+    "volume_24h_usd": 14649.892335,
+    "open_interest_base": 7291198740.0,
+    "open_interest_usd": 1115553.40722,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SCR-USD",
     "leverage_max": 3,
-    "price_usd": 0.04134,
-    "volume_24h_usd": 73861.271417,
-    "open_interest_base": 5805791.600000001,
-    "open_interest_usd": 240011.42474400005,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.04201,
+    "volume_24h_usd": 60330.346702,
+    "open_interest_base": 5866707.4,
+    "open_interest_usd": 246460.377874,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1625,205 +1625,205 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "KNEIRO-USD",
     "leverage_max": 3,
-    "price_usd": 0.06674,
-    "volume_24h_usd": 152831.037211,
-    "open_interest_base": 3851086.5999999996,
-    "open_interest_usd": 257021.51968399994,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.06716,
+    "volume_24h_usd": 164804.023374,
+    "open_interest_base": 3891104.8,
+    "open_interest_usd": 261326.59836799998,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "GOAT-USD",
     "leverage_max": 3,
-    "price_usd": 0.018015,
-    "volume_24h_usd": 191605.213641,
-    "open_interest_base": 16566462.0,
-    "open_interest_usd": 298444.81293,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.018335,
+    "volume_24h_usd": 190556.781797,
+    "open_interest_base": 16094692.0,
+    "open_interest_usd": 295096.17782,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MOODENG-USD",
     "leverage_max": 3,
-    "price_usd": 0.048375,
-    "volume_24h_usd": 284710.4862640001,
-    "open_interest_base": 16981594.0,
-    "open_interest_usd": 821484.6097500001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.049183,
+    "volume_24h_usd": 259146.002803,
+    "open_interest_base": 17258962.0,
+    "open_interest_usd": 848847.5280459999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "GRASS-USD",
     "leverage_max": 3,
-    "price_usd": 0.26063,
-    "volume_24h_usd": 2139215.578334999,
-    "open_interest_base": 6842059.0,
-    "open_interest_usd": 1783245.8371699997,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.26798,
+    "volume_24h_usd": 1926529.9180779997,
+    "open_interest_base": 7040064.8,
+    "open_interest_usd": 1886596.565104,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "PURR-USD",
     "leverage_max": 3,
-    "price_usd": 0.072468,
-    "volume_24h_usd": 222191.9655580001,
-    "open_interest_base": 44289660.0,
-    "open_interest_usd": 3209583.0808800003,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.072019,
+    "volume_24h_usd": 201466.5425519999,
+    "open_interest_base": 44130698.0,
+    "open_interest_usd": 3178248.739262,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "PNUT-USD",
     "leverage_max": 3,
-    "price_usd": 0.04329,
-    "volume_24h_usd": 371452.8509789999,
-    "open_interest_base": 11559428.2,
-    "open_interest_usd": 500407.646778,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.04418,
+    "volume_24h_usd": 377176.3222980001,
+    "open_interest_base": 11722566.4,
+    "open_interest_usd": 517902.98355199996,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "XLM-USD",
     "leverage_max": 5,
-    "price_usd": 0.15395,
-    "volume_24h_usd": 772544.6750200001,
-    "open_interest_base": 36582002.0,
-    "open_interest_usd": 5631799.2079,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.1555,
+    "volume_24h_usd": 696132.3063300003,
+    "open_interest_base": 36998066.0,
+    "open_interest_usd": 5753199.263,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "CHILLGUY-USD",
     "leverage_max": 3,
-    "price_usd": 0.009835,
-    "volume_24h_usd": 69772.464351,
-    "open_interest_base": 31365408.0,
-    "open_interest_usd": 308478.78768,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.01012,
+    "volume_24h_usd": 43457.189222,
+    "open_interest_base": 31270460.0,
+    "open_interest_usd": 316457.0552,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SAND-USD",
     "leverage_max": 5,
-    "price_usd": 0.08245,
-    "volume_24h_usd": 211254.553669,
-    "open_interest_base": 4051124.0,
-    "open_interest_usd": 334015.1738,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.083555,
+    "volume_24h_usd": 214061.828508,
+    "open_interest_base": 3980452.0,
+    "open_interest_usd": 332586.66686,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "IOTA-USD",
     "leverage_max": 3,
-    "price_usd": 0.065843,
-    "volume_24h_usd": 29610.719559,
-    "open_interest_base": 4084260.0,
-    "open_interest_usd": 268919.93118,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0665,
+    "volume_24h_usd": 26816.997287,
+    "open_interest_base": 4078780.0,
+    "open_interest_usd": 271238.87,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ALGO-USD",
     "leverage_max": 5,
-    "price_usd": 0.08555,
-    "volume_24h_usd": 220009.5617669999,
-    "open_interest_base": 9231276.0,
-    "open_interest_usd": 789735.6618,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.086565,
+    "volume_24h_usd": 211630.9787219999,
+    "open_interest_base": 9268746.0,
+    "open_interest_usd": 802348.99749,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "HYPE-USD",
     "leverage_max": 10,
-    "price_usd": 31.746,
-    "volume_24h_usd": 288364661.85151863,
-    "open_interest_base": 18373249.999999996,
-    "open_interest_usd": 583277194.4999999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 31.997,
+    "volume_24h_usd": 281894626.96039003,
+    "open_interest_base": 18376209.959999997,
+    "open_interest_usd": 587983590.09012,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ME-USD",
     "leverage_max": 3,
-    "price_usd": 0.1153,
-    "volume_24h_usd": 81245.643695,
-    "open_interest_base": 1858521.4,
-    "open_interest_usd": 214287.51742,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.1158,
+    "volume_24h_usd": 76935.30197,
+    "open_interest_base": 1796682.4,
+    "open_interest_usd": 208055.82192,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MOVE-USD",
     "leverage_max": 3,
-    "price_usd": 0.021465,
-    "volume_24h_usd": 145178.335581,
-    "open_interest_base": 22887988.0,
-    "open_interest_usd": 491290.66242,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.02158,
+    "volume_24h_usd": 119625.449238,
+    "open_interest_base": 22827636.0,
+    "open_interest_usd": 492620.38487999997,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "VIRTUAL-USD",
     "leverage_max": 5,
-    "price_usd": 0.6838,
-    "volume_24h_usd": 2722199.9044210003,
-    "open_interest_base": 16649473.4,
-    "open_interest_usd": 11384909.91092,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.6975,
+    "volume_24h_usd": 2475576.262272999,
+    "open_interest_base": 16564557.6,
+    "open_interest_usd": 11553778.925999999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "PENGU-USD",
     "leverage_max": 5,
-    "price_usd": 0.006697,
-    "volume_24h_usd": 1375702.7527470004,
-    "open_interest_base": 295556210.0,
-    "open_interest_usd": 1979339.9383699999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.006812,
+    "volume_24h_usd": 1182768.6178900003,
+    "open_interest_base": 295366080.0,
+    "open_interest_usd": 2012033.7369600001,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "USUAL-USD",
     "leverage_max": 3,
-    "price_usd": 0.0119,
-    "volume_24h_usd": 47267.685732,
-    "open_interest_base": 17627894.0,
-    "open_interest_usd": 209771.93860000002,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.01208,
+    "volume_24h_usd": 43371.52594,
+    "open_interest_base": 17767771.6,
+    "open_interest_usd": 214634.68092800002,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "FARTCOIN-USD",
     "leverage_max": 10,
-    "price_usd": 0.15303,
-    "volume_24h_usd": 16827075.013047006,
-    "open_interest_base": 156199836.19999996,
-    "open_interest_usd": 23903260.933685992,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.15558,
+    "volume_24h_usd": 14568407.880100008,
+    "open_interest_base": 156757395.59999996,
+    "open_interest_usd": 24388315.607447993,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1834,139 +1834,139 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "AIXBT-USD",
     "leverage_max": 3,
-    "price_usd": 0.02033,
-    "volume_24h_usd": 397607.1941579999,
-    "open_interest_base": 39943438.0,
-    "open_interest_usd": 812050.0945400001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.020605,
+    "volume_24h_usd": 361417.442169,
+    "open_interest_base": 39028330.0,
+    "open_interest_usd": 804178.7396499999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ZEREBRO-USD",
     "leverage_max": 3,
-    "price_usd": 0.006926,
-    "volume_24h_usd": 101450.190355,
-    "open_interest_base": 84190606.0,
-    "open_interest_usd": 583104.137156,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.006976,
+    "volume_24h_usd": 95497.019539,
+    "open_interest_base": 84198790.0,
+    "open_interest_usd": 587370.75904,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BIO-USD",
     "leverage_max": 3,
-    "price_usd": 0.02044,
-    "volume_24h_usd": 112875.5118189999,
-    "open_interest_base": 19090238.0,
-    "open_interest_usd": 390204.46472,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.02066,
+    "volume_24h_usd": 77787.028157,
+    "open_interest_base": 19161104.0,
+    "open_interest_usd": 395868.40864000004,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "GRIFFAIN-USD",
     "leverage_max": 3,
-    "price_usd": 0.008464,
-    "volume_24h_usd": 126262.774712,
-    "open_interest_base": 138130660.0,
-    "open_interest_usd": 1169137.90624,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.008474,
+    "volume_24h_usd": 117607.932912,
+    "open_interest_base": 137949120.0,
+    "open_interest_usd": 1168980.8428800001,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SPX-USD",
     "leverage_max": 5,
-    "price_usd": 0.31843,
-    "volume_24h_usd": 2605218.857834998,
-    "open_interest_base": 7391784.8,
-    "open_interest_usd": 2353766.033864,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.317,
+    "volume_24h_usd": 2823340.4177459995,
+    "open_interest_base": 8586731.600000001,
+    "open_interest_usd": 2721993.9172000005,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "S-USD",
     "leverage_max": 5,
-    "price_usd": 0.039215,
-    "volume_24h_usd": 294682.942471,
-    "open_interest_base": 27500810.0,
-    "open_interest_usd": 1078444.26415,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.039815,
+    "volume_24h_usd": 240527.3695100001,
+    "open_interest_base": 27709682.0,
+    "open_interest_usd": 1103260.9888300002,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MORPHO-USD",
     "leverage_max": 5,
-    "price_usd": 1.7359,
-    "volume_24h_usd": 2693239.20744,
-    "open_interest_base": 2941183.4000000004,
-    "open_interest_usd": 5105600.264060001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.757,
+    "volume_24h_usd": 2710101.5842299983,
+    "open_interest_base": 2961041.2,
+    "open_interest_usd": 5202549.3884,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "TRUMP-USD",
     "leverage_max": 10,
-    "price_usd": 3.4095,
-    "volume_24h_usd": 3409643.0670699994,
-    "open_interest_base": 1974783.7999999998,
-    "open_interest_usd": 6733025.366099999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 3.445,
+    "volume_24h_usd": 2882552.9179000007,
+    "open_interest_base": 1971885.0,
+    "open_interest_usd": 6793143.824999999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MELANIA-USD",
     "leverage_max": 3,
-    "price_usd": 0.10852,
-    "volume_24h_usd": 221912.141118,
-    "open_interest_base": 10033482.2,
-    "open_interest_usd": 1088833.488344,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.10949,
+    "volume_24h_usd": 182483.680971,
+    "open_interest_base": 10042581.799999999,
+    "open_interest_usd": 1099562.281282,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ANIME-USD",
     "leverage_max": 3,
-    "price_usd": 0.004806,
-    "volume_24h_usd": 156509.098116,
-    "open_interest_base": 109299452.0,
-    "open_interest_usd": 525293.166312,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.00482,
+    "volume_24h_usd": 141145.458943,
+    "open_interest_base": 107239112.0,
+    "open_interest_usd": 516892.51983999996,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "VINE-USD",
     "leverage_max": 3,
-    "price_usd": 0.0163,
-    "volume_24h_usd": 119173.428014,
-    "open_interest_base": 25064198.0,
-    "open_interest_usd": 408546.4274,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.016578,
+    "volume_24h_usd": 108568.64012,
+    "open_interest_base": 24924984.0,
+    "open_interest_usd": 413206.384752,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "VVV-USD",
     "leverage_max": 3,
-    "price_usd": 6.267,
-    "volume_24h_usd": 17640884.591711015,
-    "open_interest_base": 2354638.8600000027,
-    "open_interest_usd": 14756521.735620018,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 6.5576,
+    "volume_24h_usd": 22117708.425635993,
+    "open_interest_base": 2352592.5199999996,
+    "open_interest_usd": 15427360.709151996,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -1977,51 +1977,51 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BERA-USD",
     "leverage_max": 5,
-    "price_usd": 0.594,
-    "volume_24h_usd": 2030363.657934001,
-    "open_interest_base": 5649495.000000001,
-    "open_interest_usd": 3355800.0300000003,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.60115,
+    "volume_24h_usd": 2074825.5895690003,
+    "open_interest_base": 5753164.4,
+    "open_interest_usd": 3458514.77906,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "TST-USD",
     "leverage_max": 3,
-    "price_usd": 0.00906,
-    "volume_24h_usd": 18591.820927,
-    "open_interest_base": 12288118.0,
-    "open_interest_usd": 111330.34908,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.00923,
+    "volume_24h_usd": 15450.921584,
+    "open_interest_base": 12408570.0,
+    "open_interest_usd": 114531.1011,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "LAYER-USD",
     "leverage_max": 3,
-    "price_usd": 0.0921,
-    "volume_24h_usd": 445886.9459050001,
-    "open_interest_base": 7239540.0,
-    "open_interest_usd": 666761.634,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0913,
+    "volume_24h_usd": 411428.7582020001,
+    "open_interest_base": 7043640.0,
+    "open_interest_usd": 643084.332,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "IP-USD",
     "leverage_max": 3,
-    "price_usd": 0.8815,
-    "volume_24h_usd": 745458.3550110004,
-    "open_interest_base": 5397708.599999999,
-    "open_interest_usd": 4758080.130899998,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.86795,
+    "volume_24h_usd": 822388.869796,
+    "open_interest_base": 5431950.0,
+    "open_interest_usd": 4714661.0025,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -2032,117 +2032,117 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "KAITO-USD",
     "leverage_max": 5,
-    "price_usd": 0.3275,
-    "volume_24h_usd": 195948.2703300001,
-    "open_interest_base": 5502890.0,
-    "open_interest_usd": 1802196.475,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.3361,
+    "volume_24h_usd": 179464.6811399999,
+    "open_interest_base": 5459394.0,
+    "open_interest_usd": 1834902.3234,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "NIL-USD",
     "leverage_max": 3,
-    "price_usd": 0.0471,
-    "volume_24h_usd": 71760.752551,
-    "open_interest_base": 5002780.0,
-    "open_interest_usd": 235630.93800000002,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.048,
+    "volume_24h_usd": 79422.242737,
+    "open_interest_base": 4945478.0,
+    "open_interest_usd": 237382.94400000002,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "PAXG-USD",
     "leverage_max": 10,
-    "price_usd": 5395.5,
-    "volume_24h_usd": 39156941.01600003,
-    "open_interest_base": 16051.588,
-    "open_interest_usd": 86606343.054,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 5380.7,
+    "volume_24h_usd": 43680926.11929999,
+    "open_interest_base": 15593.252,
+    "open_interest_usd": 83902611.0364,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "PROMPT-USD",
     "leverage_max": 3,
-    "price_usd": 0.042695,
-    "volume_24h_usd": 113890.356643,
-    "open_interest_base": 28494202.0,
-    "open_interest_usd": 1216559.9543899999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.042968,
+    "volume_24h_usd": 103667.887547,
+    "open_interest_base": 28606784.0,
+    "open_interest_usd": 1229176.294912,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "BABY-USD",
     "leverage_max": 3,
-    "price_usd": 0.01112,
-    "volume_24h_usd": 115197.483706,
-    "open_interest_base": 22445256.0,
-    "open_interest_usd": 249591.24672,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.01134,
+    "volume_24h_usd": 117970.580782,
+    "open_interest_base": 23036962.0,
+    "open_interest_usd": 261239.14907999997,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "WCT-USD",
     "leverage_max": 3,
-    "price_usd": 0.057455,
-    "volume_24h_usd": 79121.03684,
-    "open_interest_base": 5369822.0,
-    "open_interest_usd": 308523.12301,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0584,
+    "volume_24h_usd": 98633.359119,
+    "open_interest_base": 5400236.0,
+    "open_interest_usd": 315373.7824,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "HYPER-USD",
     "leverage_max": 3,
-    "price_usd": 0.0911,
-    "volume_24h_usd": 73277.452031,
-    "open_interest_base": 4799992.0,
-    "open_interest_usd": 437279.2712,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.092055,
+    "volume_24h_usd": 64249.880346,
+    "open_interest_base": 4803332.0,
+    "open_interest_usd": 442170.72726,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ZORA-USD",
     "leverage_max": 3,
-    "price_usd": 0.017762,
-    "volume_24h_usd": 183073.7906999999,
-    "open_interest_base": 80739842.0,
-    "open_interest_usd": 1434101.073604,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.01787,
+    "volume_24h_usd": 186271.5210419999,
+    "open_interest_base": 80727990.0,
+    "open_interest_usd": 1442609.1813,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "INIT-USD",
     "leverage_max": 3,
-    "price_usd": 0.0758,
-    "volume_24h_usd": 515849.553506,
-    "open_interest_base": 9867596.0,
-    "open_interest_usd": 747963.7768000001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.075875,
+    "volume_24h_usd": 545929.1196079999,
+    "open_interest_base": 9736950.0,
+    "open_interest_usd": 738791.0812499999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "DOOD-USD",
     "leverage_max": 3,
-    "price_usd": 0.003203,
-    "volume_24h_usd": 46160.777076,
-    "open_interest_base": 155856218.0,
-    "open_interest_usd": 499207.466254,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.003228,
+    "volume_24h_usd": 37821.66717,
+    "open_interest_base": 155828302.0,
+    "open_interest_usd": 503013.758856,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
@@ -2153,369 +2153,369 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-03-01"
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "NXPC-USD",
     "leverage_max": 3,
-    "price_usd": 0.2678,
-    "volume_24h_usd": 69417.70608,
-    "open_interest_base": 1457494.0,
-    "open_interest_usd": 390316.8932,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.27025,
+    "volume_24h_usd": 60028.53977,
+    "open_interest_base": 1438810.0,
+    "open_interest_usd": 388838.40249999997,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SOPH-USD",
     "leverage_max": 3,
-    "price_usd": 0.009269,
-    "volume_24h_usd": 295950.4924670001,
-    "open_interest_base": 57926630.0,
-    "open_interest_usd": 536921.9334699999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.00907,
+    "volume_24h_usd": 280926.0742820001,
+    "open_interest_base": 57408652.0,
+    "open_interest_usd": 520696.47364,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "RESOLV-USD",
     "leverage_max": 3,
-    "price_usd": 0.057875,
-    "volume_24h_usd": 148914.500054,
-    "open_interest_base": 73738790.0,
-    "open_interest_usd": 4267632.47125,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.057808,
+    "volume_24h_usd": 162847.300905,
+    "open_interest_base": 73770150.0,
+    "open_interest_usd": 4264504.8312,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SYRUP-USD",
     "leverage_max": 3,
-    "price_usd": 0.23058,
-    "volume_24h_usd": 941945.4067299996,
-    "open_interest_base": 5308228.0,
-    "open_interest_usd": 1223971.21224,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.2315,
+    "volume_24h_usd": 1022577.1533799999,
+    "open_interest_base": 5066704.0,
+    "open_interest_usd": 1172941.976,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "PUMP-USD",
     "leverage_max": 10,
-    "price_usd": 0.001918,
-    "volume_24h_usd": 22737742.297907986,
-    "open_interest_base": 22683969256.0,
-    "open_interest_usd": 43507853.033008,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.001962,
+    "volume_24h_usd": 23191385.880025,
+    "open_interest_base": 22597854626.0,
+    "open_interest_usd": 44336990.77621201,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "PROVE-USD",
     "leverage_max": 3,
-    "price_usd": 0.2906,
-    "volume_24h_usd": 126276.41941,
-    "open_interest_base": 1338602.0,
-    "open_interest_usd": 388997.74120000005,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.2937,
+    "volume_24h_usd": 123100.08171,
+    "open_interest_base": 1345256.0,
+    "open_interest_usd": 395101.68720000004,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "YZY-USD",
     "leverage_max": 3,
-    "price_usd": 0.32685,
-    "volume_24h_usd": 30312.79333,
-    "open_interest_base": 1642910.0,
-    "open_interest_usd": 536985.1335,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.32665,
+    "volume_24h_usd": 26662.82868,
+    "open_interest_base": 1651330.0,
+    "open_interest_usd": 539406.9445,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "XPL-USD",
     "leverage_max": 10,
-    "price_usd": 0.097265,
-    "volume_24h_usd": 6359364.0875900015,
-    "open_interest_base": 292891974.0,
-    "open_interest_usd": 28488137.85111,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.0982,
+    "volume_24h_usd": 5751817.324554002,
+    "open_interest_base": 293728452.0,
+    "open_interest_usd": 28844133.986399997,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "WLFI-USD",
     "leverage_max": 5,
-    "price_usd": 0.1088,
-    "volume_24h_usd": 3050316.6676500007,
-    "open_interest_base": 212719236.0,
-    "open_interest_usd": 23143852.876799997,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.10895,
+    "volume_24h_usd": 2763344.2898,
+    "open_interest_base": 212184632.0,
+    "open_interest_usd": 23117515.656400003,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "LINEA-USD",
     "leverage_max": 3,
-    "price_usd": 0.003014,
-    "volume_24h_usd": 447039.387822,
-    "open_interest_base": 507504442.0,
-    "open_interest_usd": 1529618.388188,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.003042,
+    "volume_24h_usd": 224764.824124,
+    "open_interest_base": 511680240.0,
+    "open_interest_usd": 1556531.29008,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SKY-USD",
     "leverage_max": 3,
-    "price_usd": 0.06663,
-    "volume_24h_usd": 252243.819917,
-    "open_interest_base": 18239202.0,
-    "open_interest_usd": 1215278.02926,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.06767,
+    "volume_24h_usd": 242720.6189690001,
+    "open_interest_base": 18285020.0,
+    "open_interest_usd": 1237347.3033999999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ASTER-USD",
     "leverage_max": 5,
-    "price_usd": 0.70585,
-    "volume_24h_usd": 6142180.90136,
-    "open_interest_base": 77162708.0,
-    "open_interest_usd": 54465297.4418,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.7069,
+    "volume_24h_usd": 6203653.473240003,
+    "open_interest_base": 77197818.0,
+    "open_interest_usd": 54571137.544199996,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "AVNT-USD",
     "leverage_max": 5,
-    "price_usd": 0.1708,
-    "volume_24h_usd": 342507.9437600001,
-    "open_interest_base": 6112020.0,
-    "open_interest_usd": 1043933.0160000001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.1736,
+    "volume_24h_usd": 360644.14341,
+    "open_interest_base": 5952810.0,
+    "open_interest_usd": 1033407.816,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "STBL-USD",
     "leverage_max": 3,
-    "price_usd": 0.03924,
-    "volume_24h_usd": 387016.521163,
-    "open_interest_base": 82458428.0,
-    "open_interest_usd": 3235668.7147199996,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.039545,
+    "volume_24h_usd": 429983.2608060002,
+    "open_interest_base": 82056716.0,
+    "open_interest_usd": 3244932.8342199996,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "0G-USD",
     "leverage_max": 3,
-    "price_usd": 0.6195,
-    "volume_24h_usd": 145546.38944,
-    "open_interest_base": 900838.0,
-    "open_interest_usd": 558069.1410000001,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.6171,
+    "volume_24h_usd": 120664.56029,
+    "open_interest_base": 903862.0,
+    "open_interest_usd": 557773.2402,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "HEMI-USD",
     "leverage_max": 3,
-    "price_usd": 0.00825,
-    "volume_24h_usd": 106592.81578,
-    "open_interest_base": 208564306.0,
-    "open_interest_usd": 1720655.5245,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.00839,
+    "volume_24h_usd": 118046.395849,
+    "open_interest_base": 209030790.0,
+    "open_interest_usd": 1753768.3281,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "APEX-USD",
     "leverage_max": 3,
-    "price_usd": 0.2923,
-    "volume_24h_usd": 239178.98795,
-    "open_interest_base": 6975362.0,
-    "open_interest_usd": 2038898.3126,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.29415,
+    "volume_24h_usd": 274107.62939,
+    "open_interest_base": 7094682.0,
+    "open_interest_usd": 2086900.7103000002,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "2Z-USD",
     "leverage_max": 3,
-    "price_usd": 0.07249,
-    "volume_24h_usd": 227772.497453,
-    "open_interest_base": 26209278.0,
-    "open_interest_usd": 1899910.56222,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.073353,
+    "volume_24h_usd": 222347.471191,
+    "open_interest_base": 26467306.0,
+    "open_interest_usd": 1941456.297018,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ZEC-USD",
     "leverage_max": 10,
-    "price_usd": 213.72,
-    "volume_24h_usd": 21455007.757900003,
-    "open_interest_base": 180162.82,
-    "open_interest_usd": 38504397.8904,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 217.92,
+    "volume_24h_usd": 18983449.286900006,
+    "open_interest_base": 184573.46,
+    "open_interest_usd": 40222248.40319999,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MON-USD",
     "leverage_max": 5,
-    "price_usd": 0.020855,
-    "volume_24h_usd": 1995903.5612589982,
-    "open_interest_base": 1300932502.0,
-    "open_interest_usd": 27130947.32921,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.020843,
+    "volume_24h_usd": 2062809.2904739992,
+    "open_interest_base": 1296201968.0,
+    "open_interest_usd": 27016737.619024,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MET-USD",
     "leverage_max": 3,
-    "price_usd": 0.1784,
-    "volume_24h_usd": 142246.97964,
-    "open_interest_base": 12655714.0,
-    "open_interest_usd": 2257779.3776000002,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.1801,
+    "volume_24h_usd": 156249.6794,
+    "open_interest_base": 12641080.0,
+    "open_interest_usd": 2276658.508,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "MEGA-USD",
     "leverage_max": 3,
-    "price_usd": 0.13947,
-    "volume_24h_usd": 216879.2095199999,
-    "open_interest_base": 35494868.0,
-    "open_interest_usd": 4950469.23996,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.14015,
+    "volume_24h_usd": 190122.28329,
+    "open_interest_base": 35493906.0,
+    "open_interest_usd": 4974470.9259,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "CC-USD",
     "leverage_max": 3,
-    "price_usd": 0.16225,
-    "volume_24h_usd": 1162023.3585000003,
-    "open_interest_base": 39553960.0,
-    "open_interest_usd": 6417630.01,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.16228,
+    "volume_24h_usd": 1155945.14682,
+    "open_interest_base": 39793344.0,
+    "open_interest_usd": 6457663.864320001,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "ICP-USD",
     "leverage_max": 5,
-    "price_usd": 2.371,
-    "volume_24h_usd": 805599.0270000001,
-    "open_interest_base": 527585.7999999999,
-    "open_interest_usd": 1250905.9318,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 2.397,
+    "volume_24h_usd": 787892.9481800001,
+    "open_interest_base": 475337.2,
+    "open_interest_usd": 1139383.2684,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "AERO-USD",
     "leverage_max": 3,
-    "price_usd": 0.33657,
-    "volume_24h_usd": 487119.4338900001,
-    "open_interest_base": 7984590.0,
-    "open_interest_usd": 2687373.4562999997,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.34435,
+    "volume_24h_usd": 435151.9773500001,
+    "open_interest_base": 8010306.0,
+    "open_interest_usd": 2758348.8711,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "STABLE-USD",
     "leverage_max": 3,
-    "price_usd": 0.032275,
-    "volume_24h_usd": 2459387.6800490003,
-    "open_interest_base": 140474630.0,
-    "open_interest_usd": 4533818.68325,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.032818,
+    "volume_24h_usd": 2029089.7876570006,
+    "open_interest_base": 139490718.0,
+    "open_interest_usd": 4577806.383324,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "FOGO-USD",
     "leverage_max": 3,
-    "price_usd": 0.02537,
-    "volume_24h_usd": 110810.59197,
-    "open_interest_base": 30058280.0,
-    "open_interest_usd": 762578.5636,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.025643,
+    "volume_24h_usd": 81775.884224,
+    "open_interest_base": 30055392.0,
+    "open_interest_usd": 770710.417056,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "LIT-USD",
     "leverage_max": 5,
-    "price_usd": 1.356,
-    "volume_24h_usd": 7829131.250200002,
-    "open_interest_base": 29096636.0,
-    "open_interest_usd": 39455038.416,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.3645,
+    "volume_24h_usd": 7924836.653100001,
+    "open_interest_base": 28986854.0,
+    "open_interest_usd": 39552562.283,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "XMR-USD",
     "leverage_max": 5,
-    "price_usd": 342.65,
-    "volume_24h_usd": 2645465.2713699993,
-    "open_interest_base": 82465.222,
-    "open_interest_usd": 28256708.318299998,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 345.39,
+    "volume_24h_usd": 3886370.4920999995,
+    "open_interest_base": 79074.466,
+    "open_interest_usd": 27311529.81174,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "AXS-USD",
     "leverage_max": 5,
-    "price_usd": 1.2615,
-    "volume_24h_usd": 567572.0846900002,
-    "open_interest_base": 2302310.2,
-    "open_interest_usd": 2904364.3173,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 1.268,
+    "volume_24h_usd": 595513.74144,
+    "open_interest_base": 2278885.1999999997,
+    "open_interest_usd": 2889626.4335999996,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "DASH-USD",
     "leverage_max": 5,
-    "price_usd": 31.83,
-    "volume_24h_usd": 738030.17416,
-    "open_interest_base": 118380.78,
-    "open_interest_usd": 3768060.2273999997,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 32.294,
+    "volume_24h_usd": 676239.9132999997,
+    "open_interest_base": 117510.78,
+    "open_interest_usd": 3794893.12932,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "SKR-USD",
     "leverage_max": 3,
-    "price_usd": 0.021691,
-    "volume_24h_usd": 1295691.6881080004,
-    "open_interest_base": 40837946.0,
-    "open_interest_usd": 885815.8866859999,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.021568,
+    "volume_24h_usd": 1038230.3880689997,
+    "open_interest_base": 40642420.0,
+    "open_interest_usd": 876575.71456,
+    "daily_snapshot": "2026-03-02"
   },
   {
     "exchange": "hyperliquid",
     "market_type": "CROSS",
     "symbol_raw": "AZTEC-USD",
     "leverage_max": 3,
-    "price_usd": 0.021685,
-    "volume_24h_usd": 701670.4121200001,
-    "open_interest_base": 59464370.0,
-    "open_interest_usd": 1289484.86345,
-    "daily_snapshot": "2026-03-01"
+    "price_usd": 0.022223,
+    "volume_24h_usd": 1010004.267356,
+    "open_interest_base": 55662894.0,
+    "open_interest_usd": 1236996.493362,
+    "daily_snapshot": "2026-03-02"
   }
 ]
