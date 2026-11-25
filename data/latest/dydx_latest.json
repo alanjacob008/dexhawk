@@ -4,33 +4,33 @@
     "market_type": "CROSS",
     "symbol_raw": "BTC-USD",
     "leverage_max": 50,
-    "price_usd": 59839.9127,
-    "volume_24h_usd": 24864813.0217,
-    "open_interest_base": 212.5433,
-    "open_interest_usd": 12718572.51696991,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 59414.22427,
+    "volume_24h_usd": 18557619.1937,
+    "open_interest_base": 310.5002,
+    "open_interest_usd": 18448128.518679854,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "ETH-USD",
     "leverage_max": 50,
-    "price_usd": 1680.652932,
-    "volume_24h_usd": 16815440.524,
-    "open_interest_base": 11066.468,
-    "open_interest_usd": 18598891.891084176,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 1667.448688,
+    "volume_24h_usd": 59722426.9462,
+    "open_interest_base": 13486.646,
+    "open_interest_usd": 22488290.178220447,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "LINK-USD",
     "leverage_max": 10,
-    "price_usd": 8.795628596,
-    "volume_24h_usd": 10068.574,
+    "price_usd": 8.799538566,
+    "volume_24h_usd": 8667.958,
     "open_interest_base": 17240.0,
-    "open_interest_usd": 151636.63699504,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 151704.04487784,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -41,150 +41,150 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "CRV-USD",
     "leverage_max": 10,
-    "price_usd": 0.175805014,
-    "volume_24h_usd": 474.078,
+    "price_usd": 0.1737976275,
+    "volume_24h_usd": 385.388,
     "open_interest_base": 103850.0,
-    "open_interest_usd": 18257.3507039,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 18048.883615875,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "SOL-USD",
     "leverage_max": 20,
-    "price_usd": 68.94714758,
-    "volume_24h_usd": 316422.118,
-    "open_interest_base": 121719.7,
-    "open_interest_usd": 8392226.119293327,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 69.54,
+    "volume_24h_usd": 370818.51,
+    "open_interest_base": 121940.4,
+    "open_interest_usd": 8479735.416000001,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "ADA-USD",
     "leverage_max": 10,
-    "price_usd": 0.143644696,
-    "volume_24h_usd": 4782.43,
+    "price_usd": 0.143691345,
+    "volume_24h_usd": 4282.738,
     "open_interest_base": 702380.0,
-    "open_interest_usd": 100893.16157648,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 100925.9269011,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "AVAX-USD",
     "leverage_max": 10,
-    "price_usd": 6.52850701,
-    "volume_24h_usd": 3792.1447,
-    "open_interest_base": 5452.7,
-    "open_interest_usd": 35597.990173427,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 6.53175777,
+    "volume_24h_usd": 5119.3387,
+    "open_interest_base": 5036.2,
+    "open_interest_usd": 32895.238481274,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "FIL-USD",
     "leverage_max": 10,
-    "price_usd": 0.534963507,
+    "price_usd": 0.530814662,
     "volume_24h_usd": 257.9659,
     "open_interest_base": 69543.0,
-    "open_interest_usd": 37202.967167300994,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 36914.444039466005,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "LTC-USD",
     "leverage_max": 10,
-    "price_usd": 40.1765624,
-    "volume_24h_usd": 1951.377,
+    "price_usd": 40.57,
+    "volume_24h_usd": 1844.682,
     "open_interest_base": 4489.4,
-    "open_interest_usd": 180368.65923855998,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 182134.95799999998,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "DOGE-USD",
     "leverage_max": 10,
-    "price_usd": 0.05480129979,
-    "volume_24h_usd": 4267.331,
-    "open_interest_base": 3330400.0,
-    "open_interest_usd": 182510.248820616,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 0.05499507425,
+    "volume_24h_usd": 10427.994,
+    "open_interest_base": 3330900.0,
+    "open_interest_usd": 183183.092819325,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "ATOM-USD",
     "leverage_max": 10,
-    "price_usd": 1.25465608,
+    "price_usd": 1.23480693,
     "volume_24h_usd": 2397.094,
     "open_interest_base": 26583.0,
-    "open_interest_usd": 33352.522574639996,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 32824.87262019,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "DOT-USD",
     "leverage_max": 10,
-    "price_usd": 0.651328961,
+    "price_usd": 0.6494,
     "volume_24h_usd": 5040.625,
     "open_interest_base": 95196.0,
-    "open_interest_usd": 62003.911771356004,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 61820.2824,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "UNI-USD",
     "leverage_max": 10,
-    "price_usd": 4.6643,
-    "volume_24h_usd": 8232.2734,
-    "open_interest_base": 17219.0,
-    "open_interest_usd": 80314.5817,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 4.70079495,
+    "volume_24h_usd": 6163.9498,
+    "open_interest_base": 17218.0,
+    "open_interest_usd": 80938.2874491,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "BCH-USD",
     "leverage_max": 10,
-    "price_usd": 196.2002479,
+    "price_usd": 196.9849668,
     "volume_24h_usd": 1375.479,
     "open_interest_base": 36.41,
-    "open_interest_usd": 7143.651026038999,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 7172.222641187999,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "TRX-USD",
     "leverage_max": 10,
-    "price_usd": 0.30758762773,
-    "volume_24h_usd": 828.009,
+    "price_usd": 0.30747583119,
+    "volume_24h_usd": 0.0,
     "open_interest_base": 534900.0,
-    "open_interest_usd": 164528.62207277698,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 164468.82210353098,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "NEAR-USD",
     "leverage_max": 10,
-    "price_usd": 2.815192407,
-    "volume_24h_usd": 10100.369,
-    "open_interest_base": 29220.0,
-    "open_interest_usd": 82259.92213254,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 2.860680087,
+    "volume_24h_usd": 5212.425,
+    "open_interest_base": 29221.0,
+    "open_interest_usd": 83591.932822227,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -195,51 +195,51 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "XLM-USD",
     "leverage_max": 10,
-    "price_usd": 0.1240053038,
+    "price_usd": 0.12322107,
     "volume_24h_usd": 549.776,
     "open_interest_base": 222300.0,
-    "open_interest_usd": 27566.37903474,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 27392.043861000002,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "ETC-USD",
     "leverage_max": 10,
-    "price_usd": 5.73485713,
-    "volume_24h_usd": 4471.6602,
-    "open_interest_base": 1782.7,
-    "open_interest_usd": 10223.529805651,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 5.70652853,
+    "volume_24h_usd": 4526.8548,
+    "open_interest_base": 1766.9,
+    "open_interest_usd": 10082.865259657001,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "COMP-USD",
     "leverage_max": 5,
-    "price_usd": 17.21162131,
+    "price_usd": 17.15804747,
     "volume_24h_usd": 0.0,
     "open_interest_base": 3011.0,
-    "open_interest_usd": 51824.19176441,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 51662.880932169996,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "WLD-USD",
     "leverage_max": 10,
-    "price_usd": 0.229554114,
-    "volume_24h_usd": 2378.7242,
+    "price_usd": 0.233361135,
+    "volume_24h_usd": 1656.8877,
     "open_interest_base": 138643.0,
-    "open_interest_usd": 31826.071027302,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 32353.887839805,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -250,29 +250,29 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "APT-USD",
     "leverage_max": 10,
-    "price_usd": 0.370399535,
+    "price_usd": 0.361175535,
     "volume_24h_usd": 3.451,
     "open_interest_base": 59136.0,
-    "open_interest_usd": 21903.94690176,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 21358.47643776,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "ARB-USD",
     "leverage_max": 10,
-    "price_usd": 0.111081016,
+    "price_usd": 0.109780587,
     "volume_24h_usd": 201.61732,
     "open_interest_base": 267191.0,
-    "open_interest_usd": 29679.847746056003,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 29332.384821117,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -283,51 +283,51 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "LDO-USD",
     "leverage_max": 5,
-    "price_usd": 0.230156384,
+    "price_usd": 0.227,
     "volume_24h_usd": 31.1248,
     "open_interest_base": 68041.0,
-    "open_interest_usd": 15660.070523744,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 15445.307,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "OP-USD",
     "leverage_max": 10,
-    "price_usd": 0.068866234,
-    "volume_24h_usd": 0.0,
+    "price_usd": 0.068014779,
+    "volume_24h_usd": 207.51784,
     "open_interest_base": 306966.0,
-    "open_interest_usd": 21139.592386043998,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 20878.224650514,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "PEPE-USD",
     "leverage_max": 10,
-    "price_usd": 3.3464639874e-06,
-    "volume_24h_usd": 7246.277,
+    "price_usd": 3.4301977231e-06,
+    "volume_24h_usd": 2356.664,
     "open_interest_base": 4890000000.0,
-    "open_interest_usd": 16364.208898386,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 16773.666865959,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "SEI-USD",
     "leverage_max": 5,
-    "price_usd": 0.0327506306,
-    "volume_24h_usd": 1281.474,
+    "price_usd": 0.0326822526,
+    "volume_24h_usd": 1294.9589,
     "open_interest_base": 1588650.0,
-    "open_interest_usd": 52029.28930269,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 51920.66059299,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -338,95 +338,95 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "SUI-USD",
     "leverage_max": 10,
-    "price_usd": 0.640114344,
-    "volume_24h_usd": 4635.837,
-    "open_interest_base": 58530.0,
-    "open_interest_usd": 37465.89255432,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 0.643765185,
+    "volume_24h_usd": 4642.248,
+    "open_interest_base": 58520.0,
+    "open_interest_usd": 37673.1386262,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "XRP-USD",
     "leverage_max": 10,
-    "price_usd": 0.913756062,
-    "volume_24h_usd": 27038.387,
+    "price_usd": 0.9215118675,
+    "volume_24h_usd": 32264.357,
     "open_interest_base": 283380.0,
-    "open_interest_usd": 258940.19284956,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 261138.03301215,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "TIA-USD",
     "leverage_max": 10,
-    "price_usd": 0.3274,
+    "price_usd": 0.3206344,
     "volume_24h_usd": 287.50929,
     "open_interest_base": 115220.5,
-    "open_interest_usd": 37723.1917,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 36943.6558852,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "EIGEN-USD",
     "leverage_max": 5,
-    "price_usd": 0.109984394,
+    "price_usd": 0.107743545,
     "volume_24h_usd": 0.0,
     "open_interest_base": 9183.0,
-    "open_interest_usd": 1009.986690102,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 989.408973735,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "JUP-USD",
     "leverage_max": 5,
-    "price_usd": 0.224168868,
+    "price_usd": 0.22107897,
     "volume_24h_usd": 1406.265,
     "open_interest_base": 91860.0,
-    "open_interest_usd": 20592.15221448,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 20308.3141842,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "AAVE-USD",
     "leverage_max": 10,
-    "price_usd": 93.60159667,
-    "volume_24h_usd": 1028.402,
+    "price_usd": 93.26851427,
+    "volume_24h_usd": 1009.138,
     "open_interest_base": 350.3,
-    "open_interest_usd": 32788.639313501,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 32671.960548781,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "BNB-USD",
     "leverage_max": 10,
-    "price_usd": 547.5135329,
-    "volume_24h_usd": 12640.0999,
-    "open_interest_base": 102.7,
-    "open_interest_usd": 56229.63982883,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 545.288184,
+    "volume_24h_usd": 37815.1965,
+    "open_interest_base": 130.79,
+    "open_interest_usd": 71318.24158536,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "JTO-USD",
     "leverage_max": 5,
-    "price_usd": 0.232,
+    "price_usd": 0.228967515,
     "volume_24h_usd": 0.242,
     "open_interest_base": 5583.0,
-    "open_interest_usd": 1295.256,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 1278.3256362450002,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -437,7 +437,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -448,18 +448,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "ICP-USD",
     "leverage_max": 5,
-    "price_usd": 1.99688633,
+    "price_usd": 1.98985349,
     "volume_24h_usd": 2675.98552,
     "open_interest_base": 22478.5,
-    "open_interest_usd": 44887.009368905,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 44728.921674965,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -470,18 +470,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "STRK-USD",
     "leverage_max": 5,
-    "price_usd": 0.029780654,
-    "volume_24h_usd": 1676.86157,
+    "price_usd": 0.029730161,
+    "volume_24h_usd": 486.95201,
     "open_interest_base": 449135.0,
-    "open_interest_usd": 13375.53403429,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 13352.855860735,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -492,7 +492,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -503,29 +503,29 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "PYTH-USD",
     "leverage_max": 5,
-    "price_usd": 0.0486379017,
-    "volume_24h_usd": 661.2894,
+    "price_usd": 0.0482624325,
+    "volume_24h_usd": 656.6953,
     "open_interest_base": 2984120.0,
-    "open_interest_usd": 145141.335221004,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 144020.8900719,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "BONK-USD",
     "leverage_max": 10,
-    "price_usd": 2.1277209e-06,
+    "price_usd": 2.0869695e-06,
     "volume_24h_usd": 1045.6324,
     "open_interest_base": 7121000000.0,
-    "open_interest_usd": 15151.5005289,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 14861.3098095,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -536,18 +536,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "RENDER-USD",
     "leverage_max": 5,
-    "price_usd": 1.2795,
-    "volume_24h_usd": 37.638,
-    "open_interest_base": 6807.0,
-    "open_interest_usd": 8709.5565,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 1.27514835,
+    "volume_24h_usd": 650.008,
+    "open_interest_base": 7277.0,
+    "open_interest_usd": 9279.25454295,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -558,51 +558,51 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "INJ-USD",
     "leverage_max": 5,
-    "price_usd": 5.88688501,
+    "price_usd": 5.83326237,
     "volume_24h_usd": 2748.0689,
     "open_interest_base": 7829.2,
-    "open_interest_usd": 46089.600120292,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 45669.777747203996,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "IMX-USD",
     "leverage_max": 5,
-    "price_usd": 0.08788,
+    "price_usd": 0.08763,
     "volume_24h_usd": 605.61354,
     "open_interest_base": 125361.0,
-    "open_interest_usd": 11016.72468,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 10985.38443,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "HBAR-USD",
     "leverage_max": 5,
-    "price_usd": 0.0501712592,
+    "price_usd": 0.0501796871,
     "volume_24h_usd": 2602.6942,
     "open_interest_base": 383260.0,
-    "open_interest_usd": 19228.636800992,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 19231.866877946002,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "ALGO-USD",
     "leverage_max": 5,
-    "price_usd": 0.0789782674,
-    "volume_24h_usd": 14534.7884,
-    "open_interest_base": 1231590.0,
-    "open_interest_usd": 97268.844347166,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 0.0780866099,
+    "volume_24h_usd": 13944.8138,
+    "open_interest_base": 1232160.0,
+    "open_interest_usd": 96215.19725438401,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -613,7 +613,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -624,18 +624,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "RUNE-USD",
     "leverage_max": 5,
-    "price_usd": 0.51063936,
+    "price_usd": 0.506180202,
     "volume_24h_usd": 23.9148,
     "open_interest_base": 31445.0,
-    "open_interest_usd": 16057.0546752,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 15916.836451890002,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -646,7 +646,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -657,7 +657,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -668,7 +668,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -679,7 +679,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -690,18 +690,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "DYDX-USD",
     "leverage_max": 5,
-    "price_usd": 0.069918224,
-    "volume_24h_usd": 50.97994,
+    "price_usd": 0.069539022,
+    "volume_24h_usd": 15057.27947,
     "open_interest_base": 466048.0,
-    "open_interest_usd": 32585.248458752,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 32408.522125056003,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -712,7 +712,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -723,7 +723,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -734,7 +734,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -745,7 +745,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -756,7 +756,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -767,7 +767,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -778,7 +778,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -789,7 +789,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -800,7 +800,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -811,7 +811,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -822,7 +822,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -833,7 +833,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -844,7 +844,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -855,7 +855,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -866,7 +866,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -877,7 +877,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -888,7 +888,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -899,7 +899,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -910,7 +910,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -921,7 +921,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -932,18 +932,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "TAO-USD",
     "leverage_max": 5,
-    "price_usd": 181.0560625,
-    "volume_24h_usd": 7633.8841,
+    "price_usd": 179.6491305,
+    "volume_24h_usd": 5055.3272,
     "open_interest_base": 92.45,
-    "open_interest_usd": 16738.632978125,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 16608.562114725002,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -954,7 +954,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -965,7 +965,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -976,7 +976,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -987,7 +987,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -998,7 +998,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1009,7 +1009,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1020,7 +1020,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1031,18 +1031,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "XMR-USD",
     "leverage_max": 5,
-    "price_usd": 493.16,
-    "volume_24h_usd": 30518.3536,
-    "open_interest_base": 96.38,
-    "open_interest_usd": 47530.760800000004,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 505.9686868,
+    "volume_24h_usd": 17368.9041,
+    "open_interest_base": 94.19,
+    "open_interest_usd": 47657.190609692,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1053,7 +1053,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1064,18 +1064,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "1INCH-USD",
     "leverage_max": 5,
-    "price_usd": 0.0586638027,
+    "price_usd": 0.057420075,
     "volume_24h_usd": 0.0,
     "open_interest_base": 161050.0,
-    "open_interest_usd": 9447.805424835,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 9247.50307875,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1086,7 +1086,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1097,7 +1097,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1108,7 +1108,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1119,7 +1119,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1130,18 +1130,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "PENDLE-USD",
     "leverage_max": 5,
-    "price_usd": 1.251298701,
-    "volume_24h_usd": 88.076,
-    "open_interest_base": 13023.0,
-    "open_interest_usd": 16295.662983123,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 1.237503015,
+    "volume_24h_usd": 94.326,
+    "open_interest_base": 13018.0,
+    "open_interest_usd": 16109.814249269999,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1152,7 +1152,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1163,7 +1163,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1174,7 +1174,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1185,7 +1185,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1196,7 +1196,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1207,7 +1207,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1218,7 +1218,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1229,7 +1229,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1240,7 +1240,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1251,7 +1251,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1262,7 +1262,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1273,7 +1273,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1284,7 +1284,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1295,7 +1295,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1306,7 +1306,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1317,7 +1317,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1328,7 +1328,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1339,7 +1339,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1350,7 +1350,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1361,7 +1361,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1372,7 +1372,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1383,7 +1383,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1394,7 +1394,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1405,7 +1405,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1416,7 +1416,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1427,7 +1427,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1438,7 +1438,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1449,7 +1449,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1460,7 +1460,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1471,18 +1471,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "PAXG-USD",
     "leverage_max": 5,
-    "price_usd": 3578.423469,
-    "volume_24h_usd": 5888.554,
-    "open_interest_base": 15.484,
-    "open_interest_usd": 55408.308993996,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 3531.476505,
+    "volume_24h_usd": 2357.71,
+    "open_interest_base": 15.356,
+    "open_interest_usd": 54229.35321078,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1493,7 +1493,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1504,7 +1504,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1515,7 +1515,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1526,7 +1526,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1537,7 +1537,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1548,7 +1548,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1559,7 +1559,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1570,7 +1570,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1581,7 +1581,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1592,7 +1592,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1603,7 +1603,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1614,7 +1614,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1625,7 +1625,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1636,7 +1636,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1647,7 +1647,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1658,7 +1658,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1669,7 +1669,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1680,7 +1680,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1691,7 +1691,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1702,7 +1702,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1713,7 +1713,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1724,7 +1724,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1735,18 +1735,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "POL-USD",
     "leverage_max": 5,
-    "price_usd": 0.07594,
+    "price_usd": 0.075342861,
     "volume_24h_usd": 6975.661,
     "open_interest_base": 191620.0,
-    "open_interest_usd": 14551.6228,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 14437.19902482,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1757,7 +1757,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1768,7 +1768,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1779,7 +1779,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1790,7 +1790,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1801,18 +1801,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "ZEC-USD",
     "leverage_max": 5,
-    "price_usd": 711.5977748,
-    "volume_24h_usd": 9489.41,
-    "open_interest_base": 136.7,
-    "open_interest_usd": 97275.41581516,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 733.754511,
+    "volume_24h_usd": 7921.875,
+    "open_interest_base": 136.0,
+    "open_interest_usd": 99790.61349599999,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1823,7 +1823,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1834,7 +1834,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1845,7 +1845,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1856,7 +1856,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1867,7 +1867,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1878,7 +1878,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1889,7 +1889,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1900,7 +1900,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1911,7 +1911,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1922,7 +1922,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1933,7 +1933,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1944,7 +1944,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1955,7 +1955,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1966,7 +1966,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1977,7 +1977,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1988,7 +1988,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -1999,7 +1999,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2010,7 +2010,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2021,7 +2021,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2032,7 +2032,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2043,7 +2043,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2054,7 +2054,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2065,7 +2065,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2076,7 +2076,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2087,7 +2087,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2098,7 +2098,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2109,7 +2109,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2120,7 +2120,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2131,7 +2131,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2142,7 +2142,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2153,7 +2153,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2164,7 +2164,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2175,18 +2175,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "PENGU-USD",
     "leverage_max": 5,
-    "price_usd": 0.00418625513,
+    "price_usd": 0.00417596805,
     "volume_24h_usd": 1277.6068,
     "open_interest_base": 1598900.0,
-    "open_interest_usd": 6693.403327357,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 6676.955315145,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2197,7 +2197,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2208,7 +2208,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2219,7 +2219,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2230,7 +2230,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2241,7 +2241,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2252,7 +2252,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2263,7 +2263,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2274,7 +2274,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2285,7 +2285,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2296,7 +2296,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2307,7 +2307,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2318,7 +2318,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2329,7 +2329,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2340,7 +2340,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2351,7 +2351,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2362,7 +2362,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2373,7 +2373,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2384,7 +2384,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2395,7 +2395,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2406,7 +2406,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2417,7 +2417,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2428,7 +2428,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2439,18 +2439,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "HYPE-USD",
     "leverage_max": 5,
-    "price_usd": 61.34562234,
-    "volume_24h_usd": 14200.8636,
-    "open_interest_base": 1469.6,
-    "open_interest_usd": 90153.526590864,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 59.37752788,
+    "volume_24h_usd": 16114.5604,
+    "open_interest_base": 1397.8,
+    "open_interest_usd": 82997.908470664,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2461,7 +2461,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2472,7 +2472,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2483,7 +2483,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2494,7 +2494,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2505,7 +2505,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2516,7 +2516,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2527,7 +2527,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2538,7 +2538,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2549,7 +2549,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2560,7 +2560,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2571,7 +2571,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2582,7 +2582,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2593,7 +2593,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2604,7 +2604,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2615,7 +2615,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2626,7 +2626,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2637,7 +2637,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2648,7 +2648,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2659,7 +2659,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2670,7 +2670,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2681,7 +2681,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2692,7 +2692,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2703,7 +2703,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2714,7 +2714,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2725,7 +2725,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2736,7 +2736,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2747,7 +2747,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2758,7 +2758,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2769,7 +2769,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2780,7 +2780,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2791,7 +2791,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2802,7 +2802,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2813,7 +2813,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2824,7 +2824,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2835,7 +2835,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2846,7 +2846,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2857,7 +2857,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2868,18 +2868,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "PUMP-USD",
     "leverage_max": 5,
-    "price_usd": 0.002401,
-    "volume_24h_usd": 96.14,
-    "open_interest_base": 3178000.0,
-    "open_interest_usd": 7630.378,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 0.00243546345,
+    "volume_24h_usd": 120.509,
+    "open_interest_base": 3168000.0,
+    "open_interest_usd": 7715.5482096000005,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2890,7 +2890,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2901,7 +2901,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2912,7 +2912,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2923,7 +2923,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2934,7 +2934,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2945,7 +2945,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2956,7 +2956,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2967,7 +2967,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2978,7 +2978,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -2989,7 +2989,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3000,7 +3000,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3011,7 +3011,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3022,7 +3022,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3033,7 +3033,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3044,7 +3044,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3055,18 +3055,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "ASTER-USD",
     "leverage_max": 5,
-    "price_usd": 0.492087695,
+    "price_usd": 0.480361119,
     "volume_24h_usd": 317.4937,
     "open_interest_base": 34792.0,
-    "open_interest_usd": 17120.71508444,
-    "daily_snapshot": "2026-11-24"
+    "open_interest_usd": 16712.724052248,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3077,7 +3077,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3088,7 +3088,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3099,7 +3099,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3110,7 +3110,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3121,7 +3121,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3132,7 +3132,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3143,18 +3143,18 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
     "market_type": "CROSS",
     "symbol_raw": "MON-USD",
     "leverage_max": 5,
-    "price_usd": 0.0104686816,
-    "volume_24h_usd": 804.6855,
-    "open_interest_base": 887400.0,
-    "open_interest_usd": 9289.90805184,
-    "daily_snapshot": "2026-11-24"
+    "price_usd": 0.00930325025,
+    "volume_24h_usd": 1307.0321,
+    "open_interest_base": 940600.0,
+    "open_interest_usd": 8750.63718515,
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3165,7 +3165,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3176,7 +3176,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3187,7 +3187,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3198,7 +3198,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3209,7 +3209,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3220,7 +3220,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3231,7 +3231,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3242,7 +3242,7 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   },
   {
     "exchange": "dydx",
@@ -3253,6 +3253,6 @@
     "volume_24h_usd": 0.0,
     "open_interest_base": 0.0,
     "open_interest_usd": 0.0,
-    "daily_snapshot": "2026-11-24"
+    "daily_snapshot": "2026-11-25"
   }
 ]
